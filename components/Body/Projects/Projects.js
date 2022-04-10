@@ -44,7 +44,7 @@ const Projects = () => {
               project_list={["React.js", "SCSS", "Axios", "Open Weather API"]}
             />
           </li>
-          <li>
+          {/* <li>
             <ProjectItem
               title={"Work in Progress"}
               description={`Work in Progress`}
@@ -56,7 +56,7 @@ const Projects = () => {
               list_float={"right"}
               project_list={["TBD", "TBD", "TBD", "TBD"]}
             />
-          </li>
+          </li> */}
         </ul>
       </section>
     );
