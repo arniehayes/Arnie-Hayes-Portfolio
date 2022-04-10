@@ -10,10 +10,12 @@
     align-items: center;
 }
 
-.name {
-    //width: 100%;
+.logo {
     display: flex;
     justify-content: center;
-    color: white;
-    font-size: 40px;
+
+    img {
+        width: 55px;
+        height: auto;
+    }
 }
