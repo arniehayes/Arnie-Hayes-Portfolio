@@ -46,18 +46,15 @@ const Projects = () => {
           </li>
           <li>
             <ProjectItem
-              title={"JavaScript Quiz"}
-              description={`A simple way of testing your JavaScript knowledge. This
-                      app aims to better your skills and give you a challenge.
-                      Hosted by Netlify and add more stuff here but not too much
-                      stuff.`}
+              title={"Work in Progress"}
+              description={`Work in Progress`}
               img_path={"work_in_progress.jpg"}
               img_name={"JavaScript Quiz Project"}
               flex_direction={"row"}
               negative_margin={"left"}
               text_align={"right"}
               list_float={"right"}
-              project_list={["React.js", "Next.js", "Material UI", "SCSS"]}
+              project_list={["TBD", "TBD", "TBD", "TBD"]}
             />
           </li>
         </ul>
