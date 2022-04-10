@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+.container {
+    font-family: 'Oswald', sans-serif;
+    padding: 1rem 1rem 5rem 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name {
+    //width: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 40px;
+}
