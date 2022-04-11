@@ -9,7 +9,8 @@ $accent-color: #58c5a4;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        color: white;
+        color: $accent-color;
+        font-size: 35px;
 
         &:before {
             content: "";
@@ -87,7 +88,7 @@ $accent-color: #58c5a4;
     .text_container {
         width: 100%;
         background-color: rgb(49, 47, 47);
-        box-shadow: 0 10px 30px -15px black;
+        box-shadow: 0 10px 30px -15px rgb(59, 59, 59);
         border-radius: 4px;
         margin: 0;
         padding: 0;
