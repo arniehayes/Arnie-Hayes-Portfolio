@@ -12,7 +12,6 @@ const Projects = () => {
       <section className={style.projects_container}>
         <h2>
           Projects
-          <div />
         </h2>
         <ul className={style.projects_list}>
           <li>
