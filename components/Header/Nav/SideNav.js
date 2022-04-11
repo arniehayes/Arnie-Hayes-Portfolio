@@ -9,7 +9,7 @@ const SideNav = () => {
               href="https://github.com/stars/arniehayes/lists/notable-projects"
               aria-label="Github"
             >
-              <img src="github.png" />
+              <img src="icons8-github-64.png" />
             </a>
           </li>
           <li>
@@ -17,7 +17,7 @@ const SideNav = () => {
               href="https://www.linkedin.com/in/arnie-hayes/"
               aria-label="LinkedIn"
             >
-              <img src="linkedin.png" />
+              <img src="icons8-linkedin-120.png" />
             </a>
           </li>
           <li>
