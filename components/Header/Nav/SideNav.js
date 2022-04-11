@@ -21,7 +21,10 @@ const SideNav = () => {
             </a>
           </li>
           <li>
-            <a href="/" aria-label="Resume">
+            <a
+              href="https://drive.google.com/uc?export=download&id=1I3aIIfgPDeDQJ0tKewHa9HixAaDp09Gg"
+              aria-label="Resume"
+            >
               <img src="cv.png" />
             </a>
           </li>
