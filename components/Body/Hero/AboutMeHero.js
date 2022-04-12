@@ -25,7 +25,10 @@ const AboutMeHero = () => {
       </div>
       <a
         href="https://drive.google.com/uc?export=download&id=1I3aIIfgPDeDQJ0tKewHa9HixAaDp09Gg"
+        aria-label="Resume Download"
         className={style.resume_button}
+        target="_blank"
+        rel="noopener noreferrer"
       >
         <p>Check out my Resume!</p>
       </a>

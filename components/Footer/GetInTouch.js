@@ -10,6 +10,9 @@ const GetInTouch = () => {
         <a
           href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzCMldlGFsFtDTVmmRZGHqpfWVSRqqdFnwzlRDQTCslwgmrsLQdZhRrcZrTHVVhNRvltPsx"
           className={style.contact_button}
+          aria-label="Contact Me Button"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <p>Say Hi!</p>
         </a>
