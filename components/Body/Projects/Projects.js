@@ -10,9 +10,7 @@ const Projects = () => {
 
     return (
       <section className={style.projects_container}>
-        <h2>
-          Projects
-        </h2>
+        <h2>Projects</h2>
         <ul className={style.projects_list}>
           <li>
             <ProjectItem
@@ -22,6 +20,8 @@ const Projects = () => {
                       Hosted by Netlify.`}
               img_path={"JS_QUIZ_SNIPPET.jpg"}
               img_name={"JavaScript Quiz Project"}
+              path_link={"https://js-quiz-ah.netlify.app/"}
+              aria_label={"Javascript Quiz"}
               flex_direction={"row"}
               negative_margin={"left"}
               text_align={"right"}
