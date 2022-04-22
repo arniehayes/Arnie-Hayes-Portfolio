@@ -2,12 +2,12 @@
 	background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 30%);
 }
 
-$animationSpeed: 20s;
+$animationSpeed: 15s;
 
 // Animation
 @keyframes scroll {
 	0% { transform: translateX(0); }
-	100% { transform: translateX(calc(-100px * 7))}
+	100% { transform: translateX(calc(-105px * 7))}
 }
 
 
@@ -15,7 +15,7 @@ $animationSpeed: 20s;
 .slider {
 	background: white;
 	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
-	height: 100px;
+	//height: 100px;
 	width: 100%;
 	margin: auto;
 	overflow:hidden;
@@ -27,7 +27,7 @@ $animationSpeed: 20s;
 		content: "";
 		position: absolute;
 		height: 100%;
-		width: 50%;
+		width: 20%;
 		z-index: 2;
 	}
 	
@@ -45,17 +45,14 @@ $animationSpeed: 20s;
 	.slide_track {
 		animation: scroll $animationSpeed linear infinite;
 		display: flex;
-		width: calc(100px * 7);
+		width: 100%;
 	}
 	
 	.slider_item {
-		display: flex;
-		justify-content: space-evenly;
-		align-items: center;
 
 		.img {
 			height: auto;
-			width: 100px;
+			width: 105px;
 			padding: 5px;
 		}
 	}
