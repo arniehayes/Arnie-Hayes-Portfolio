@@ -8,7 +8,7 @@ const Nav = () => {
 
   useEffect(() => {
     console.log(window.innerWidth);
-    if (window.innerWidth <= 1300) {
+    if (window.innerWidth < 1300) {
       setToggleMenu(true);
     }
   })
