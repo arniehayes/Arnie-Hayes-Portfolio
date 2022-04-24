@@ -66,7 +66,7 @@ $accent-color: #58c5a4;
         border-radius: 4px;
         
         img {
-            max-width: 350px;
+            width: 350px;
             height: auto;
             border-radius: 4px;
         }
@@ -116,147 +116,158 @@ $accent-color: #58c5a4;
 
 
 
-@media only screen and (min-width: 1460px) {
-.projects_container {
-    margin: 0 8rem;
-    padding: 100px 0;
-    //max-width: 1240px;
+@media only screen and (min-width: 1300px) {
+    .projects_container {
+        margin: 15px;
+        padding: 0;
 
+        h2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            color: $accent-color;
+            font-size: 35px;
 
-    h2 {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        color: white;
-        div {
-            width: 300px;
-            height: .01rem;
-            background-color: $accent-color;
-            margin-top: 18px;
-            margin-left: 1rem;
-        }
+            &:before {
+                content: "";
+                display: block;
+                width: 90px;
+                height: 1px;
+                background-color: rgb(139, 139, 139);
+            }
+
+            &:after {
+                content: "";
+                display: block;
+                width: 90px;
+                height: 1px;
+                background-color: rgb(139, 139, 139);
+            }
+        }    
     }
-}
 
-.projects_list {
-    display: block;
-    list-style: none;
-    margin: 3rem 0;
-    padding: 0;
-
-    li {
-        margin-bottom: 100px;
-        display: flex;
-    }
-}
-
-.project_content_container {
-    display: block;
-    width: 100%;
-}
-
-.project_content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-}
-
-.project_image {
-    display: block;
-
-    .image_wrapper {
-        box-shadow: 0 10px 30px -15px black;
+    .projects_list {
+        display: block;
+        list-style: none;
         margin: 0;
         padding: 0;
-        border-radius: 4px;
-        width: 500px;
-        height: 250px;
-        
-        img {
-            width: 100%;
-            height: 100%;
-            border-radius: 4px;
-        }
-    }
-}
-
-.project_description {
-    width: 40%;
-    height: 17rem;
-    display: flex;
-    flex-direction: column;
-    z-index: 2;
-
-    .project_name {
-        color: white;
-        font-size: 25px;
-    }
-
-    .text_container {
-        //width: 100%;
-        background-color: rgb(49, 47, 47);
-        box-shadow: 0 10px 30px -15px black;
-        border-radius: 4px;
-
-        p {
-            margin: 1.1rem;
-            color: rgb(235, 235, 235);
-         }
-    }
-
-    .project_tech_list {
-        display: flex;
-        flex-direction: row;
-        margin-top: 1rem;
-        height: 1.5rem;
-        padding-inline-start: 0px;
 
         li {
-            color: #58c5a4;
+            margin-bottom: 100px;
+            display: flex;
         }
     }
-}
 
-// FLEX DIRECTIONS
-.flex_direction_row {
-    flex-direction: row;
-}
-.flex_direction_row_reverse {
-    flex-direction: row-reverse;
-}
+    .project_content_container {
+        display: block;
+        width: 100%;
+    }
 
-// JUSTIFY CONTENT
-.justify_content_end {
-    justify-content: flex-end;
-}
-.justify_content_start {
-    justify-content: flex-start;
-}
+    .project_content {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
 
-// MARGIN
-.margin_left {
-    margin-left: 2rem;
-}
-.margin_right {
-    margin-right: 2rem;
-}
+    .project_image {
+        display: block;
 
-// NEGATIVE MARGINS
-.negative_margin_left {
-    margin-left: -3rem;
-}
-.negative_margin_right {
-    margin-right: -3rem;
-}
+        .image_wrapper {
+            box-shadow: 0 10px 30px -15px black;
+            margin: 0;
+            padding: 0;
+            border-radius: 4px;
+            
+            img {
+                width: 450px;
+                height: auto;
+                border-radius: 4px;
+            }
+        }
+    }
 
-//TEXT ALIGN
-.text_align_right {
-    text-align: right;
-}
-.text_align_left {
-    text-align: left;
-}
+    .project_description {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        z-index: 2;
+        max-width: 800px;
 
+        .project_name {
+            color: white;
+            font-size: 25px;
+            width: 100%;
+        }
+
+        .text_container {
+            width: 100%;
+            background-color: rgb(49, 47, 47);
+            box-shadow: 0 10px 30px -15px rgb(59, 59, 59);
+            border-radius: 4px;
+            margin: 0;
+            padding: 0;
+
+            p {
+                margin: 1.1rem;
+                color: rgb(235, 235, 235);
+            }
+        }
+
+        .project_tech_list {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin: 1rem 2px;
+            padding-inline-start: 0px;
+
+            li {
+                color: #58c5a4;
+                margin: 0;
+            }
+        }
+    }
+
+    // FLEX DIRECTIONS
+    .flex_direction_row {
+        flex-direction: row;
+    }
+    .flex_direction_row_reverse {
+        flex-direction: row-reverse;
+    }
+
+    // JUSTIFY CONTENT
+    .justify_content_end {
+        justify-content: flex-end;
+    }
+    .justify_content_start {
+        justify-content: flex-start;
+    }
+
+    // MARGIN
+    .margin_left {
+        margin-left: 2rem;
+    }
+    .margin_right {
+        margin-right: 2rem;
+    }
+
+    // NEGATIVE MARGINS
+    .negative_margin_left {
+        margin-left: -3rem;
+    }
+    .negative_margin_right {
+        margin-right: -3rem;
+    }
+
+    //TEXT ALIGN
+    .text_align_right {
+        text-align: right;
+    }
+    .text_align_left {
+        text-align: left;
+    }
 }

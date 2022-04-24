@@ -14,11 +14,7 @@ const Slider = () => {
           <img className={style.img} src="reactjs.png" alt="" />
         </div>
         <div className={style.slider_item}>
-          <img
-            className={style.img}
-            src="https://www.svgrepo.com/show/303206/javascript-logo.svg"
-            alt=""
-          />
+          <img className={style.img} src="https://www.svgrepo.com/show/303206/javascript-logo.svg" alt=""/>
         </div>
         <div className={style.slider_item}>
           <img className={style.img} src="css.png" alt="" />

@@ -132,28 +132,50 @@
 }
 
 
-@media only screen and (min-width: 1460px) {
+@media screen and (min-width: 1300px) {
     .nav_container {
         font-family: 'Nunito', sans-serif;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 3rem;
-        width: 100%;
+    }
 
-        ul {
+    .hamburger_container {
+        display: none;
+    }
+
+    .exit_menu_container {
+        display: none;
+    }
+
+    .navigation {
+        font-family: 'Nunito', sans-serif;
+        display: flex;
+        width: 100%; height: unset;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        position: relative;
+        z-index: unset;
+        overflow: unset;
+
+        .links {
             margin: 0;
-            padding: 0;
+            padding: 2px;
             display: flex;
-            justify-content: space-evenly;
+            justify-content: center;
             align-items: center;
+            flex-direction: row;
 
             a {
                 margin: 1.5rem;
                 color: rgb(88, 197, 164);
                 font-size: 20px;
-                //text-decoration: underline;
             }
         }
+    }
+    .hamburger_container {
+        display: none;
     }
 }
