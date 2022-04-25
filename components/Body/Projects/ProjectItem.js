@@ -51,7 +51,8 @@ const ProjectItem = ({ title, description, img_path, img_name, path_link, aria_l
             </p>
           </div>
           <ul
-            className={`${style.project_tech_list} ${
+            className={`${style.project_tech_list} 
+            ${
               list_float === "right"
                 ? style.justify_content_end
                 : style.justify_content_start

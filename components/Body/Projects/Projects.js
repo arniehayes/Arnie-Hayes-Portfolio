@@ -10,40 +10,47 @@ const Projects = () => {
 
     return (
       <section className={style.projects_container}>
-        <h2>Projects</h2>
-        <ul className={style.projects_list}>
-          <li>
-            <ProjectItem
-              title={"JavaScript Quiz"}
-              description={`A simple way of testing your JavaScript knowledge. This
+        <div className={`${style.big_word} ${style.filter}`}>
+          <img src="projects.svg" alt="big word" />
+        </div>
+        <div className={style.project_items}>
+          <div className={style.project_title}>
+            <h2>Notable Projects</h2>
+            <span />
+          </div>
+          <ul className={style.projects_list}>
+            <li>
+              <ProjectItem
+                title={"JavaScript Quiz"}
+                description={`A simple way of testing your JavaScript knowledge. This
                       app aims to better your skills and give you a challenge.
                       Hosted by Netlify.`}
-              img_path={"JS_QUIZ_SNIPPET.jpg"}
-              img_name={"JavaScript Quiz Project"}
-              path_link={"https://js-quiz-ah.netlify.app/"}
-              aria_label={"Javascript Quiz"}
-              flex_direction={"row"}
-              negative_margin={"left"}
-              text_align={"right"}
-              list_float={"right"}
-              project_list={["React.js", "Next.js", "Material UI", "SCSS"]}
-            />
-          </li>
-          <li>
-            <ProjectItem
-              title={"Weather App"}
-              description={`Weather App using Open Weather API to display weekly updates and daily highlights,
+                img_path={"JS_QUIZ_SNIPPET.jpg"}
+                img_name={"JavaScript Quiz Project"}
+                path_link={"https://js-quiz-ah.netlify.app/"}
+                aria_label={"Javascript Quiz"}
+                flex_direction={"row"}
+                negative_margin={"left"}
+                text_align={"right"}
+                list_float={"right"}
+                project_list={["React.js", "Next.js", "Material UI", "SCSS"]}
+              />
+            </li>
+            <li>
+              <ProjectItem
+                title={"Weather App"}
+                description={`Weather App using Open Weather API to display weekly updates and daily highlights,
                       as well as weather alerts.`}
-              img_path={"WEATHER_APP_SNIPPET.jpg"}
-              img_name={"Weather App"}
-              flex_direction={"row-reverse"}
-              negative_margin={"right"}
-              text_align={"left"}
-              list_float={"left"}
-              project_list={["React.js", "SCSS", "Axios", "Open Weather API"]}
-            />
-          </li>
-          {/* <li>
+                img_path={"WEATHER_APP_SNIPPET.jpg"}
+                img_name={"Weather App"}
+                flex_direction={"row-reverse"}
+                negative_margin={"right"}
+                text_align={"left"}
+                list_float={"left"}
+                project_list={["React.js", "SCSS", "Axios", "Open Weather API"]}
+              />
+            </li>
+            {/* <li>
             <ProjectItem
               title={"Work in Progress"}
               description={`Work in Progress`}
@@ -56,7 +63,8 @@ const Projects = () => {
               project_list={["TBD", "TBD", "TBD", "TBD"]}
             />
           </li> */}
-        </ul>
+          </ul>
+        </div>
       </section>
     );
 };

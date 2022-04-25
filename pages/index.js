@@ -15,7 +15,7 @@ const Home = () => {
       <Header />
       <AboutMeHero />
       <Projects />
-      <Slider />
+      {/* <Slider /> */}
       <GetInTouch />
       <SideNav />
     </>

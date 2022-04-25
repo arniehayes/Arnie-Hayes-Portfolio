@@ -1,5 +1,5 @@
 @mixin white-gradient {
-	background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 30%);
+	background: linear-gradient(to right,  #58c5a4 -100%,rgba(255, 255, 255, 0) 30%);
 }
 
 $animationSpeed: 15s;
@@ -13,17 +13,16 @@ $animationSpeed: 15s;
 
 // Styling
 .slider {
-	background: white;
-	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
-	//height: 100px;
-	width: 100%;
+	background: #242222;
+	height: 400px;
+	max-width: 800px;
 	margin: auto;
 	overflow:hidden;
 	position: relative;
 	
 	&:before,
 	&:after {
-		@include white-gradient;
+		@include white-gradient();
 		content: "";
 		position: absolute;
 		height: 100%;
