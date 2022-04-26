@@ -14,7 +14,7 @@ const Projects = () => {
           <img src="projects.svg" alt="big word" />
         </div>
         <div className={style.project_items}>
-          <div className={style.project_title}>
+          <div className={style.project_header}>
             <h2>Notable Projects</h2>
             <span />
           </div>
@@ -25,7 +25,7 @@ const Projects = () => {
                 description={`A simple way of testing your JavaScript knowledge. This
                       app aims to better your skills and give you a challenge.
                       Hosted by Netlify.`}
-                img_path={"JS_QUIZ_SNIPPET.jpg"}
+                img_path={"longer_js.jpg"}
                 img_name={"JavaScript Quiz Project"}
                 path_link={"https://js-quiz-ah.netlify.app/"}
                 aria_label={"Javascript Quiz"}

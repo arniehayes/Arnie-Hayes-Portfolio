@@ -9,6 +9,14 @@ function MyApp({ Component, pageProps }) {
           name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0"
         />
+
+        {/* FONT LINKS */}
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@200&family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@200&family=Open+Sans:wght@300&family=Quicksand:wght@500&display=swap" rel="stylesheet" />
+        <link href="" rel="stylesheet" />
+        <link href="" rel="stylesheet" />
       </Head>
       <Component {...pageProps} />
     </>

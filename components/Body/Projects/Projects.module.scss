@@ -56,21 +56,21 @@ $accent-color: #58c5a4;
     margin: 0;
 }
 
-.project_image {
+.project_image_container {
     display: block;
+}
 
-    .image_wrapper {
-        box-shadow: 0 10px 30px -15px black;
-        margin: 0;
-        padding: 0;
-        border-radius: 4px;
-        
-        img {
-            width: 350px;
-            height: auto;
-            border-radius: 4px;
-        }
-    }
+.image_wrapper {
+    box-shadow: 0 10px 30px -15px black;
+    margin: 0;
+    padding: 0;
+    border-radius: 4px;
+}
+
+.project_image {
+    width: 350px;
+    height: auto;
+    border-radius: 4px;
 }
 
 .project_description {
@@ -78,39 +78,39 @@ $accent-color: #58c5a4;
     flex-direction: row;
     flex-wrap: wrap;
     z-index: 2;
+}
 
-    .project_name {
-        color: white;
-        font-size: 25px;
-        width: 100%;
-    }
+.project_name {
+    color: white;
+    font-size: 25px;
+    width: 100%;
+}
 
-    .text_container {
-        width: 100%;
-        background-color: rgb(49, 47, 47);
-        box-shadow: 0 10px 30px -15px rgb(59, 59, 59);
-        border-radius: 4px;
-        margin: 0;
-        padding: 0;
+.text_container {
+    width: 100%;
+    background-color: rgb(49, 47, 47);
+    box-shadow: 0 10px 30px -15px rgb(59, 59, 59);
+    border-radius: 4px;
+    margin: 0;
+    padding: 0;
 
-        p {
-            margin: 1.1rem;
-            color: rgb(235, 235, 235);
-         }
-    }
-
-    .project_tech_list {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin: 1rem 2px;
-        padding-inline-start: 0px;
-
-        li {
-            color: #58c5a4;
-            margin: 0;
+    p {
+        margin: 1.1rem;
+        color: rgb(235, 235, 235);
         }
+}
+
+.project_tech_list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1rem 2px;
+    padding-inline-start: 0px;
+
+    li {
+        color: #58c5a4;
+        margin: 0;
     }
 }
 
@@ -127,7 +127,7 @@ $accent-color: #58c5a4;
         align-items: center;   
     }
 
-    .project_title {
+    .project_header {
         display: flex;
         justify-content: flex-start;
         flex-direction: column;
@@ -141,6 +141,7 @@ $accent-color: #58c5a4;
         }
 
         h2 {
+            font-family: 'Bebas Neue', cursive;
             display: flex;
             justify-content: flex-start;
             align-items: center;
@@ -200,7 +201,7 @@ $accent-color: #58c5a4;
         margin: 0;
     }
 
-    .project_image {
+    .project_image_container {
         display: block;
     }
 
@@ -209,12 +210,12 @@ $accent-color: #58c5a4;
         margin: 0;
         padding: 0;
         border-radius: 4px;
-        
-        img {
-            width: 450px;
-            height: auto;
-            border-radius: 4px;
-        }
+    }
+            
+    .project_image {
+        width: 550px;
+        height: auto;
+        border-radius: 4px;
     }
 
     .project_description {
@@ -222,16 +223,19 @@ $accent-color: #58c5a4;
         flex-direction: column;
         flex-wrap: wrap;
         z-index: 2;
-        max-width: 800px;
+        max-width: 700px;
     }
 
     .project_name {
+        font-family: 'Bebas Neue', cursive;
         color: white;
-        font-size: 25px;
+        font-size: 35px;
         width: 100%;
+        margin-bottom: 5px;
     }
 
     .text_container {
+        font-family: 'Open Sans', sans-serif;
         background-color: rgb(49, 47, 47);
         box-shadow: 0 10px 30px -15px rgb(59, 59, 59);
         border-radius: 4px;
@@ -240,15 +244,15 @@ $accent-color: #58c5a4;
 
         p {
             margin: 1.1rem;
-            color: rgb(235, 235, 235);
+            color: rgb(255, 255, 255);
         }
     }
 
     .project_tech_list {
+        font-family: 'Inter', sans-serif;
         width: 100%;
         display: flex;
         flex-direction: row;
-        //justify-content: space-around;
         margin: 1rem 2px;
         padding-inline-start: 0px;
 
@@ -264,17 +268,14 @@ $accent-color: #58c5a4;
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 0;
-        //width: 100vw;
-        padding: 2px;
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 100%;
 
         img {
-            max-width: 100vw;
+            max-width: 100%;
             height: auto;
-            margin-left: 2rem;
-            margin-right: 2rem;
         }
     }
 

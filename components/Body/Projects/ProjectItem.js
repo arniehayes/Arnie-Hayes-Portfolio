@@ -15,7 +15,7 @@ const ProjectItem = ({ title, description, img_path, img_name, path_link, aria_l
             : style.flex_direction_row
         }`}
       >
-        <div className={style.project_image}>
+        <div className={style.project_image_container}>
           <div className={style.image_wrapper}>
             <a
               href={path_link}
@@ -23,7 +23,7 @@ const ProjectItem = ({ title, description, img_path, img_name, path_link, aria_l
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={img_path} alt={img_name} />
+              <img className={style.project_image} src={img_path} alt={img_name} />
             </a>
           </div>
         </div>
