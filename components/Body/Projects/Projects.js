@@ -16,7 +16,7 @@ const Projects = () => {
         <div className={style.project_items}>
           <div className={style.project_header}>
             <h2>Notable Projects</h2>
-            <span />
+            <span className={style.long_bar} />
           </div>
           <ul className={style.projects_list}>
             <li>
@@ -50,20 +50,13 @@ const Projects = () => {
                 project_list={["React.js", "SCSS", "Axios", "Open Weather API"]}
               />
             </li>
-            {/* <li>
-            <ProjectItem
-              title={"Work in Progress"}
-              description={`Work in Progress`}
-              img_path={"work_in_progress.jpg"}
-              img_name={"JavaScript Quiz Project"}
-              flex_direction={"row"}
-              negative_margin={"left"}
-              text_align={"right"}
-              list_float={"right"}
-              project_list={["TBD", "TBD", "TBD", "TBD"]}
-            />
-          </li> */}
           </ul>
+          <div className={style.bar_container}>
+            <span className={style.long_bar} />
+            <a href="/" >
+              <p className={style.project_footer}>See More </p>
+            </a>
+          </div>
         </div>
       </section>
     );
