@@ -1,6 +1,8 @@
 $accent-color: #58c5a4;
+
 .hero_container {
     margin: 5px;
+    margin-top: 5rem;
     margin-bottom: 15rem;
     padding: 0;
     display: flex;
@@ -10,7 +12,7 @@ $accent-color: #58c5a4;
     align-items: center;
 }
 
-.info {
+.info_container{
     margin: 1rem;
     display: flex;
     flex-wrap: wrap;
@@ -19,6 +21,7 @@ $accent-color: #58c5a4;
 }
 
 .title {
+    font-family: 'Quicksand', sans-serif;
     font-size: 13px;
     
     h1 {
@@ -28,7 +31,8 @@ $accent-color: #58c5a4;
 }
 
 .name {
-    font-size: 45px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 55px;
     color: rgb(212, 212, 212);
 
     h3 {
@@ -69,7 +73,7 @@ $accent-color: #58c5a4;
 }
 
 .resume_button {
-    border: 1.5px solid $accent-color;
+    border: 3px solid $accent-color;
     border-radius: 4px;
     padding: 1.25rem;
     background-color: transparent;
@@ -79,6 +83,23 @@ $accent-color: #58c5a4;
         margin: 0;
         padding: 0;
         color: #fff;
+    }
+}
+
+.big_word {
+    position: absolute;
+    top: 160%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    img {
+        max-width: 100%;
+        height: auto;
     }
 }
 

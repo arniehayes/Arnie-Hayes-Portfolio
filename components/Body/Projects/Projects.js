@@ -53,9 +53,11 @@ const Projects = () => {
           </ul>
           <div className={style.bar_container}>
             <span className={style.long_bar} />
-            <a href="/" >
-              <p className={style.project_footer}>See More </p>
-            </a>
+            <div className={style.footer_container}>
+              <a href="/">
+                <p className={style.project_footer}>See More </p>
+              </a>
+            </div>
           </div>
         </div>
       </section>

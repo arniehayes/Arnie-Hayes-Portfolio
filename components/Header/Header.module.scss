@@ -2,6 +2,27 @@
 
 .container {
     font-family: 'Oswald', sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+
+    img {
+        width: 45px;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+.container {
+    font-family: 'Oswald', sans-serif;
     padding: 2rem 1rem 5rem 1rem;
     display: flex;
     flex-direction: row;
@@ -19,4 +40,5 @@
         width: 45px;
         height: auto;
     }
+}
 }

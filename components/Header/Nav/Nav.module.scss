@@ -1,147 +1,78 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
-
+$accent-color: #58c5a4;
 
 .nav_container {
     position: relative;
     text-align: center;
-
-    .hamburger_container {
-        display: inline-block;
-        margin: 0;
-        padding: 0;
-        cursor: pointer;
-        border: 0;
-        background-color: transparent;
-
-        .hamburger_box {
-            width: 40px;
-            height: 24px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            .hamburger_inner {
-                position: absolute;
-                width: 30px;
-                height: 3px;
-                border-radius: 4px;
-                background-color: #fff;
-
-                &:before{
-                    position: absolute;
-                    width: 30px;
-                    height: 3px;
-                    display: block;
-                    content: "";
-                    top: -8px;
-                    background-color: #fff;
-                    
-                }
-
-                &:after {
-                    position: absolute;
-                    width: 30px;
-                    height: 3px;
-                    display: block;
-                    content: "";
-                    bottom: -8px;
-                    background-color: #fff;
-                }
-            }
-        }
-    }
 }
 
 .navigation {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.open {
     font-family: 'Nunito', sans-serif;
     display: block;
-    width: 90vw;
+    width: 100vw;
     height: 100vh;
-    background-color: #fff;
+    background-color: rgb(206, 206, 206);
     position: fixed;
     top: 0;
     right: 0;
     z-index: 20;
     overflow: hidden;
-
-    .links {
-        margin-top: 8rem;
-        padding: 2px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-
-        a {
-            margin: 1.5rem;
-            color: rgb(88, 197, 164);
-            font-size: 20px;
-        }
-    }
 }
 
-// CLOSE MENU STYLE
-.exit_menu_container {
+.nav_icon{
+    width: 100%;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
-    height: 5rem;
-    margin-right: 1rem;
-    padding: 0;
-    cursor: pointer;
+    padding: 1.5rem;
 }
 
-.exit_menu_button, .exit_menu {
-    width: 40px;
-    height: 24px;
+.icon {
+    width: 30px;
+    height: auto;
+}
+
+.icon_margins {
+    margin: 1rem 0;
+    width: 35px;
+    height: auto;
+}
+
+.hide_icon {
+    width: 100%;
+    display: none;
+}
+
+.show {
+    margin-top: 5rem;
+    padding: 2px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: none;
-    background: none;
-    padding: 0;
-    margin: 0;
-}
-.exit_menu_inner {
-    position: absolute;
-    width: 30px;
-    height: 3px;
-    border-radius: 4px;
-    background-color: transparent;
+    flex-direction: column;
 
-    &:before{
-        position: absolute;
-        width: 30px;
-        height: 3px;
-        display: block;
-        content: "";
-        transform: rotate(45deg);
-        background-color: rgb(0, 0, 0);
-        
-    }
-
-    &:after {
-        position: absolute;
-        width: 30px;
-        height: 3px;
-        display: block;
-        content: "";
-        transform: rotate(-45deg);
-        background-color: rgb(0, 0, 0);
+    a {
+        font-family: 'Bebas Neue', cursive;
+        margin: 1.5rem;
+        color: $accent-color;
+        font-size: 55px;
     }
 }
 
+.links {
+    display: none;
+}
 
 @media screen and (min-width: 1300px) {
     .nav_container {
-        font-family: 'Nunito', sans-serif;
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-
-    .hamburger_container {
-        display: none;
     }
 
     .exit_menu_container {
@@ -149,7 +80,6 @@
     }
 
     .navigation {
-        font-family: 'Nunito', sans-serif;
         display: flex;
         width: 100%; height: unset;
         flex-direction: column;
@@ -159,28 +89,30 @@
         position: relative;
         z-index: unset;
         overflow: unset;
-
-        .links {
-            margin: 0;
-            padding: 2px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: row;
-
-            a {
-                margin: 1.5rem;
-                color: rgb(88, 197, 164);
-                font-size: 20px;
-
-                &:hover {
-                    color: white;
-                }
-
-            }
-        }
     }
-    .hamburger_container {
+
+    .nav_icon {
         display: none;
+    }
+
+    .links {
+        margin: 0;
+        padding: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+
+        a {
+            font-family: 'Bebas Neue', cursive;
+            margin: 1.5rem;
+            color: rgb(88, 197, 164);
+            font-size: 35px;
+
+            &:hover {
+                color: white;
+            }
+
+        }
     }
 }
