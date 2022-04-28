@@ -1,0 +1,234 @@
+$accent-color: #58c5a4;
+
+.hero_container {
+    margin: 5px;
+    margin-top: 5rem;
+    margin-bottom: 15rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.info_container{
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+}
+
+.title {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 13px;
+    
+    h1 {
+        margin: 0;
+        color: $accent-color;
+    }
+}
+
+.name {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 55px;
+    color: rgb(212, 212, 212);
+
+    h3 {
+        margin: 0;
+    }
+}
+
+.catchphrase {
+    font-size: 28px;
+
+    h3 {
+        margin: 0;
+        color: rgba(207, 204, 204, 0.404);
+    }
+}
+
+.about {
+    font-size: 18px;
+    color: #ffffff;
+    padding-top: 5px;
+
+    p {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.hero_img {
+    margin: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 0px;
+        height: auto;
+    }
+}
+
+.resume_button {
+    border: 3px solid $accent-color;
+    border-radius: 4px;
+    padding: 1.25rem;
+    background-color: transparent;
+    margin-top: 10rem;
+    text-align: center;
+    p {
+        margin: 0;
+        padding: 0;
+        color: #fff;
+    }
+}
+
+.big_word {
+    position: absolute;
+    top: 160%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+@media only screen and (min-width: 1300px) {
+    .hero_container {
+        margin: 5px;
+        margin-bottom: 15rem;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .big_word {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            max-width: 99%;
+            height: auto;
+        }
+    }
+
+    .info_container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        height: 400px;
+        margin-top: 14rem;
+        margin-bottom: 500px;
+    }
+
+    .text_container {
+        margin: .5rem;
+    }
+
+    .title {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 30px;
+        width: 100%;
+        
+        h1 {
+            margin: 0;
+            color: $accent-color;
+        }
+    }
+
+    .name {
+        font-family: 'Bebas Neue', cursive;
+        font-size: 75px;
+        color: rgb(212, 212, 212);
+        width: 100%;
+        margin: 0;
+        padding: 0;
+
+        h3 {
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+    .catchphrase {
+        font-size: 35px;
+        width: 100%;
+
+        h3 {
+            margin: 0;
+            color: rgba(207, 204, 204, 0.404);
+        }
+    }
+
+    .about {
+        font-size: 22px;
+        color: #ffffff;
+        padding-top: 5px;
+
+        p {
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    .hero_img {
+        margin: .5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 700px;
+            height: auto;
+        }
+    }
+
+    .resume_button {
+        border: 2px solid $accent-color;
+        border-radius: 4px;
+        padding: 1.25rem;
+        background-color: transparent;
+        margin-top: 10rem;
+        text-align: center;
+
+        &:hover {
+            background-color: $accent-color;
+        }
+
+        p {
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            font-size: 20px;
+        }
+    }
+
+    // FILTERS for SVG
+    .filter {
+        filter: invert(100%) sepia(6%) saturate(22%) hue-rotate(298deg) brightness(108%) contrast(100%) opacity(15%);
+    }
+}

@@ -1,0 +1,79 @@
+$accent-color: #58c5a4;
+
+.get_in_touch_container {
+    margin-top: 8rem;
+    margin-bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center space-around;
+    align-items: center;
+
+    h1 {
+        font-family: 'Bebas Neue', cursive;
+        color: $accent-color;
+    }
+
+    p {
+        color: #fff;
+        font-size: 20px;
+        text-align: center;
+        padding: 5px;
+    }
+}
+
+.contact_button {
+    width: 8rem;
+    border: 1.5px solid $accent-color;
+    border-radius: 4px;
+    padding: 1.25rem 1.5rem;
+    background-color: transparent;
+    margin-top: 50px;
+    text-align: center;
+
+    p {
+        margin: 0;
+        padding: 0;
+        color: #fff;
+    }
+}
+
+@media only screen and (min-width: 1300px) { 
+    
+.get_in_touch_container {
+    margin-bottom: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center space-around;
+    align-items: center;
+
+    h1 {
+        font-family: 'Bebas Neue', cursive;
+        font-size: 45px;
+        color: $accent-color;
+    }
+
+    p {
+        font-family: 'Quicksand', sans-serif;
+        color: #fff;
+        font-size: 20px;
+        text-align: center;
+        padding: 5px;
+    }
+}
+
+.contact_button {
+    width: 8rem;
+    border: 1.5px solid $accent-color;
+    border-radius: 4px;
+    padding: 1.25rem 1.5rem;
+    background-color: transparent;
+    margin-top: 50px;
+    text-align: center;
+
+    p {
+        margin: 0;
+        padding: 0;
+        color: #fff;
+    }
+}
+}
