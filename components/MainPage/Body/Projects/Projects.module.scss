@@ -103,6 +103,7 @@ $accent-color: #58c5a4;
     p {
         margin: 1.1rem;
         color: rgb(235, 235, 235);
+        font-size: 16px;
     }
 }
 
@@ -300,7 +301,7 @@ $accent-color: #58c5a4;
     .big_word {
         font-family: 'Bebas Neue', cursive;
         position: absolute;
-        top: 162%;
+        top: 155%;
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 0;
