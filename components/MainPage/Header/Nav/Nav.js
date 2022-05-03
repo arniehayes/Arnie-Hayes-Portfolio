@@ -25,12 +25,19 @@ const Nav = () => {
     <div className={style.nav_container}>
       {/* NAV */}
       <nav className={toggleMenu ? style.open : style.navigation} id="nav">
-        <a className={style.nav_icon} onClick={() => { setToggleMenu(!toggleMenu), scrollLock()}}>
+        <a
+          className={style.nav_icon}
+          onClick={() => {
+            setToggleMenu(!toggleMenu), scrollLock();
+          }}
+        >
           {toggleMenu ? (
             <img
               src="cross.png"
               aria-label="close icon"
-              className={`${style.icon_margins} ${toggleMenu ? style.icon : style.hide_icon} `}
+              className={`${style.icon_margins} ${
+                toggleMenu ? style.icon : style.hide_icon
+              } `}
             />
           ) : (
             <img
@@ -41,14 +48,17 @@ const Nav = () => {
           )}
         </a>
         <ul className={toggleMenu ? style.show : style.links} id="links">
-          <Link href="/">
+          <Link href="/" scroll={false}>
             <a>Home</a>
           </Link>
-          <Link href="ProjectPage">
+          <Link href="/#projects" scroll={false}>
             <a>Projects</a>
           </Link>
-          <Link href="/">
+          <Link href="/#resume">
             <a>Resume</a>
+          </Link>
+          <Link href="/#contact" scroll={false}>
+            <a>Contact</a>
           </Link>
         </ul>
       </nav>

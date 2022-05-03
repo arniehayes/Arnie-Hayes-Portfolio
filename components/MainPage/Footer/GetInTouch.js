@@ -2,7 +2,7 @@ import style from "./GetInTouch.module.scss";
 
 const GetInTouch = () => {
     return (
-      <div className={style.get_in_touch_container}>
+      <div className={style.get_in_touch_container} id="contact">
         <h1>Get In Touch</h1>
         <p>
           Feel free to reach out if you have any questions or just want to chat!

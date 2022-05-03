@@ -8,7 +8,7 @@ $accent-color: #58c5a4;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -72,12 +72,21 @@ $accent-color: #58c5a4;
     }
 }
 
-.resume_button {
+.resume_button_container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.resume_button{
     border: 3px solid $accent-color;
     border-radius: 4px;
     padding: 1.25rem;
     background-color: transparent;
-    margin-top: 10rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    width: 220px;
     text-align: center;
     p {
         margin: 0;
@@ -107,13 +116,13 @@ $accent-color: #58c5a4;
 @media only screen and (min-width: 1300px) {
     .hero_container {
         margin: 5px;
-        margin-bottom: 15rem;
         padding: 0;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        margin-bottom: 20rem;
     }
 
     .big_word {
@@ -142,7 +151,6 @@ $accent-color: #58c5a4;
         z-index: 1;
         height: 400px;
         margin-top: 14rem;
-        margin-bottom: 500px;
     }
 
     .text_container {
@@ -207,25 +215,38 @@ $accent-color: #58c5a4;
         }
     }
 
-    .resume_button {
-        border: 2px solid $accent-color;
-        border-radius: 4px;
-        padding: 1.25rem;
-        background-color: transparent;
-        margin-top: 10rem;
-        text-align: center;
+.resume_button_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
 
-        &:hover {
-            background-color: $accent-color;
-        }
+.resume_button{
+    border: 3px solid $accent-color;
+    border-radius: 4px;
+    padding: 1.25rem;
+    background-color: transparent;
+    margin-top: unset;
+    margin-left: unset;
+    width: 300px;
+    height: 80px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-        p {
-            margin: 0;
-            padding: 0;
-            color: #fff;
-            font-size: 20px;
-        }
+    &:hover {
+        background-color: $accent-color;
     }
+
+    p {
+        margin: 0;
+        padding: 0;
+        color: #fff;
+        font-size: 20px;
+    }
+}
 
     // FILTERS for SVG
     .filter {

@@ -10,7 +10,7 @@ const Projects = () => {
 
     return (
       <section className={style.projects_container}>
-        <div className={`${style.big_word} ${style.filter}`}>
+        <div className={`${style.big_word} ${style.filter}`} id="projects">
           <img src="projects.svg" alt="big word" />
         </div>
         <div className={style.project_items}>
@@ -54,9 +54,9 @@ const Projects = () => {
           <div className={style.bar_container}>
             <span className={style.long_bar} />
             <div className={style.footer_container}>
-              <a href="/">
+              {/* <a href="/">
                 <p className={style.project_footer}>See More </p>
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

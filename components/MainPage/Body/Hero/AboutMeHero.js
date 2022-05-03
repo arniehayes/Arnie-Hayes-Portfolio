@@ -4,7 +4,7 @@ const AboutMeHero = () => {
   return (
     <section className={style.hero_container}>
       <div className={`${style.big_word} ${style.filter}`}>
-        <img src="hello.svg" alt="big word"/>
+        <img src="hello.svg" alt="big word" />
       </div>
       <div className={style.info_container}>
         <div className={style.text_container}>
@@ -28,15 +28,6 @@ const AboutMeHero = () => {
           <img src="hero1.png" alt="hero" />
         </div> */}
       </div>
-      <a
-        href="https://drive.google.com/uc?export=download&id=1I3aIIfgPDeDQJ0tKewHa9HixAaDp09Gg"
-        aria-label="Resume Download"
-        className={style.resume_button}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <p>Check out my Resume!</p>
-      </a>
     </section>
   );
 };
