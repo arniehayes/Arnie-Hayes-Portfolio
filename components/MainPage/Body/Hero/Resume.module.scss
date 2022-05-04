@@ -1,7 +1,10 @@
 $accent-color: #58c5a4;
 
 .resume_section {
-
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 5px;
 }
 
 .resume_button_container{

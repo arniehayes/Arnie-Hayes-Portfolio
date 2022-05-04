@@ -81,7 +81,7 @@ export interface ButtonBaseTypeMap<P = {}, D extends React.ElementType = 'button
      */
     TouchRippleProps?: Partial<TouchRippleProps>;
     /**
-     * A ref that points to the `TouchRippple` element.
+     * A ref that points to the `TouchRipple` element.
      */
     touchRippleRef?: React.Ref<TouchRippleActions>;
   };
@@ -110,11 +110,11 @@ export type ExtendButtonBase<M extends OverridableTypeMap> = ((
  *
  * Demos:
  *
- * - [Buttons](https://mui.com/components/buttons/)
+ * - [Buttons](https://mui.com/material-ui/react-button/)
  *
  * API:
  *
- * - [ButtonBase API](https://mui.com/api/button-base/)
+ * - [ButtonBase API](https://mui.com/material-ui/api/button-base/)
  */
 declare const ButtonBase: ExtendButtonBase<ButtonBaseTypeMap>;
 

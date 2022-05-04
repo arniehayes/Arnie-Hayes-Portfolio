@@ -6,12 +6,12 @@ const Nav = () => {
 
   const [toggleMenu, setToggleMenu] = useState(false);
 
-  useEffect(() => {
-    console.log(toggleMenu);
-    if (toggleMenu) {
-      setToggleMenu(false);
-    }
-  }, []);
+  // useEffect(() => {
+  //   console.log(toggleMenu);
+  //   if (toggleMenu) {
+  //     setToggleMenu(false);
+  //   }
+  // }, []);
 
   const scrollLock = () => {
     if (!toggleMenu)
@@ -54,7 +54,7 @@ const Nav = () => {
           <Link href="/#projects" scroll={false}>
             <a>Projects</a>
           </Link>
-          <Link href="/#resume">
+          <Link href="/#resume" scroll={false}>
             <a>Resume</a>
           </Link>
           <Link href="/#contact" scroll={false}>
