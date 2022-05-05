@@ -1,34 +1,34 @@
 import style from "./Nav.module.scss";
 import Link from "next/link";
+import Stack from "@mui/material/Stack";
+import Button from "@mui/material/Button";
 import { useEffect, useState } from "react";
+import { render } from "react-dom";
 
 const Nav = () => {
 
   const [toggleMenu, setToggleMenu] = useState(false);
 
-  // useEffect(() => {
-  //   console.log(toggleMenu);
-  //   if (toggleMenu) {
-  //     setToggleMenu(false);
-  //   }
-  // }, []);
+  const closeNav = () => {
+    setToggleMenu(false);
+  } 
 
-  const scrollLock = () => {
-    if (!toggleMenu)
-      document.body.style.overflow = "hidden";
-    else
-      document.body.style.overflow = "visible";
-  }
+  function closeNav () {
+    setToggleMenu(false);
+  }; 
   
 
   return (
     <div className={style.nav_container}>
       {/* NAV */}
-      <nav className={toggleMenu ? style.open : style.navigation} id="nav">
+      <nav
+        className={`${style.navigation} ${toggleMenu && style.open}`}
+        id="nav"
+      >
         <a
           className={style.nav_icon}
           onClick={() => {
-            setToggleMenu(!toggleMenu), scrollLock();
+            setToggleMenu(!toggleMenu)
           }}
         >
           {toggleMenu ? (
@@ -49,16 +49,16 @@ const Nav = () => {
         </a>
         <ul className={toggleMenu ? style.show : style.links} id="links">
           <Link href="/" scroll={false}>
-            <a>Home</a>
+            <a onClick={() => closeNav()}>Home</a>
           </Link>
           <Link href="/#projects" scroll={false}>
-            <a>Projects</a>
+            <a onClick={() => closeNav()}>Projects</a>
           </Link>
           <Link href="/#resume" scroll={false}>
-            <a>Resume</a>
+            <a onClick={() => closeNav()}>Resume</a>
           </Link>
           <Link href="/#contact" scroll={false}>
-            <a>Contact</a>
+            <a onClick={() => closeNav()}>Contact</a>
           </Link>
         </ul>
       </nav>
