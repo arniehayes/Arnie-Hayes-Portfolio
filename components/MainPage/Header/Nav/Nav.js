@@ -43,9 +43,6 @@ const Nav = () => {
           )}
         </a>
         <ul className={toggleMenu ? style.show : style.links} id="links">
-          <Link href="/" scroll={false}>
-            <a onClick={() => closeNav()}>Home</a>
-          </Link>
           <Link href="/#projects" scroll={false}>
             <a onClick={() => closeNav()}>Projects</a>
           </Link>

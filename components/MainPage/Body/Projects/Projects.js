@@ -10,11 +10,11 @@ const Projects = () => {
 
     return (
       <section className={style.projects_container}>
-        <div className={`${style.big_word} ${style.filter}`} id="projects">
+        <div className={`${style.big_word} ${style.filter}`}>
           <img src="projects.svg" alt="big word" />
         </div>
         <div className={style.project_items}>
-          <div className={style.project_header}>
+          <div className={style.project_header} id="projects">
             <h2>Notable Projects</h2>
             <span className={style.long_bar} />
           </div>
