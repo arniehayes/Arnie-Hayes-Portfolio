@@ -13,11 +13,6 @@ const Nav = () => {
     setToggleMenu(false);
   } 
 
-  function closeNav () {
-    setToggleMenu(false);
-  }; 
-  
-
   return (
     <div className={style.nav_container}>
       {/* NAV */}
