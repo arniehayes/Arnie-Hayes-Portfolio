@@ -1,5 +1,6 @@
 import style from "./Projects.module.scss";
 import ProjectItem from "./ProjectItem";
+import Image from "next/image";
 
 const Projects = () => {
 
@@ -41,7 +42,7 @@ const Projects = () => {
     return (
       <section className={style.projects_container}>
         <div className={`${style.big_word} ${style.filter}`}>
-          <img src="projects.svg" alt="big word" />
+          <img src="/projects.svg" alt="big word"/>
         </div>
         <div className={style.project_items}>
           <div className={style.project_header} id="projects">

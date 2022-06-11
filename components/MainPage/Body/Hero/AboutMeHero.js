@@ -1,4 +1,5 @@
 import style from "./Hero.module.scss";
+import Resume from "../Hero/Resume";
 
 const AboutMeHero = () => {
   return (
@@ -27,6 +28,7 @@ const AboutMeHero = () => {
         {/* <div className={style.hero_img}>
           <img src="hero1.png" alt="hero" />
         </div> */}
+        <Resume />
       </div>
     </section>
   );

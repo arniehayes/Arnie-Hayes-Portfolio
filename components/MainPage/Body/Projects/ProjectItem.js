@@ -1,6 +1,6 @@
 import style from "./Projects.module.scss";
 import React, { useState } from "react";
-import { amber } from "@mui/material/colors";
+import Image from "next/image";
 
 const ProjectItem = ({ title, description, img_path, img_name, path_link, aria_label, flex_direction, negative_margin, text_align, list_float, project_list}) => {
 
@@ -23,7 +23,7 @@ const ProjectItem = ({ title, description, img_path, img_name, path_link, aria_l
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img className={style.project_image} src={img_path} alt={img_name} />
+              <Image className={style.project_image} src={"/" + img_path} alt={img_name} width={550} height={380}/>
             </a>
           </div>
         </div>
