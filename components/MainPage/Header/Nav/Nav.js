@@ -37,7 +37,7 @@ const Nav = () => {
           ) : (
             <img
               src="list.png"
-              aria="menu icon"
+              aria-label="menu icon"
               className={toggleMenu ? style.hide_icon : style.icon}
             />
           )}
