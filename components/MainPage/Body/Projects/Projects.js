@@ -23,8 +23,7 @@ const Projects = () => {
     },
     {
       title: "Weather App",
-      description: `Weather App using Open Weather API to display weekly updates and daily highlights,
-                      as well as weather alerts.`,
+      description: `Weather App using Open Weather API to display current, hourly, and weekly highlights.`,
       img_path: "WEATHER_APP_SNIPPET.jpg",
       img_name: "Weather App",
       flex_direction: "row-reverse",
