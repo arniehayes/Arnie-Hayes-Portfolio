@@ -18,7 +18,7 @@ const Projects = () => {
       negative_margin: "left",
       text_align: "right",
       list_float: "right",
-      project_list: ["React.js", "Next.js", "Material UI", "SCSS"],
+      project_list: ["Next.js", "Material UI", "SCSS"],
       key: 1,
     },
     {
@@ -31,7 +31,7 @@ const Projects = () => {
       negative_margin: "right",
       text_align: "left",
       list_float: "left",
-      project_list: ["React.js", "SCSS", "Axios", "Open Weather API"],
+      project_list: ["Next.js", "SCSS", "Axios", "Open Weather API"],
       key: 2,
     },
   ];
