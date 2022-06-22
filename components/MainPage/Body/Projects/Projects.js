@@ -19,19 +19,20 @@ const Projects = () => {
       text_align: "right",
       list_float: "right",
       project_list: ["React.js", "Next.js", "Material UI", "SCSS"],
-      key: 1
+      key: 1,
     },
     {
       title: "Weather App",
       description: `Weather App using Open Weather API to display current, hourly, and weekly highlights.`,
       img_path: "WEATHER_APP_SNIPPET.jpg",
       img_name: "Weather App",
+      path_link: "https://weather-appv2.netlify.app/",
       flex_direction: "row-reverse",
       negative_margin: "right",
       text_align: "left",
       list_float: "left",
       project_list: ["React.js", "SCSS", "Axios", "Open Weather API"],
-      key: 2
+      key: 2,
     },
   ];
 
