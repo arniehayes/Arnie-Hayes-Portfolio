@@ -23,7 +23,7 @@ const ProjectItem = ({ title, description, img_path, img_name, path_link, aria_l
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Image className={style.project_image} src={"/" + img_path} alt={img_name} width={550} height={380}/>
+              <img className={style.project_image} src={"/" + img_path} alt={img_name} width="550px" height="380px"/>
             </a>
           </div>
         </div>
