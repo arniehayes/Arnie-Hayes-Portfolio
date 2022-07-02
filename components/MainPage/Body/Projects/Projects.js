@@ -10,7 +10,7 @@ const Projects = () => {
       description: `A simple way of testing your JavaScript knowledge. This
                       app aims to better your skills and give you a challenge.
                       Hosted by Netlify.`,
-      img_path: "longer_js.jpg",
+      img_path: "big_quiz_snip.jpg",
       img_name: "JavaScript Quiz Project",
       path_link: "https://js-quiz-ah.netlify.app/",
       aria_label: "Javascript Quiz",
@@ -18,20 +18,20 @@ const Projects = () => {
       negative_margin: "left",
       text_align: "right",
       list_float: "right",
-      project_list: ["Next.js", "Material UI", "SCSS"],
+      project_list: ["Next.js", "Material UI", "SCSS", "Javascript"],
       key: 1,
     },
     {
       title: "Weather App",
       description: `Weather App using Open Weather API to display current, hourly, and weekly highlights.`,
-      img_path: "WEATHER_APP_SNIPPET.jpg",
+      img_path: "big_weather_snip.jpg",
       img_name: "Weather App",
       path_link: "https://weather-appv2.netlify.app/",
       flex_direction: "row-reverse",
       negative_margin: "right",
       text_align: "left",
       list_float: "left",
-      project_list: ["Next.js", "SCSS", "Axios", "Open Weather API"],
+      project_list: ["Next.js", "SCSS", "Axios", "Open Weather API", "Typescript"],
       key: 2,
     },
   ];
