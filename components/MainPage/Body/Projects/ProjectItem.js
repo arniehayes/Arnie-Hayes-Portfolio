@@ -2,7 +2,7 @@ import style from "./Projects.module.scss";
 import React, { useState } from "react";
 import Image from "next/image";
 
-const ProjectItem = ({ title, description, img_path, img_name, path_link, aria_label, flex_direction, negative_margin, text_align, list_float, project_list}) => {
+const ProjectItem = ({ title, description, img_path, img_name, path_link, aria_label, flex_direction, negative_margin, text_align, list_float, project_list, external_link_path_1, external_link_path_2}) => {
 
     const [position, setPosition] = useState("");
 
@@ -23,7 +23,13 @@ const ProjectItem = ({ title, description, img_path, img_name, path_link, aria_l
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img className={style.project_image} src={"/" + img_path} alt={img_name} width="550px" height="380px"/>
+              <img
+                className={style.project_image}
+                src={"/" + img_path}
+                alt={img_name}
+                width="550px"
+                height="380px"
+              />
             </a>
           </div>
         </div>
@@ -71,6 +77,28 @@ const ProjectItem = ({ title, description, img_path, img_name, path_link, aria_l
                 </li>
               ))}
           </ul>
+          <div
+            className={`${style.external_link_container} ${
+              text_align === "right"
+                ? style.external_link_reverse
+                : style.external_link_normal
+            }`}
+          >
+            <button className={` ${style.external_link}`}>
+              <img
+                src={external_link_path_1}
+                alt="github external link"
+                className={`${style.external_link_img}`}
+              />
+            </button>
+            <button className={`${style.external_link}`}>
+              <img
+                src={external_link_path_2}
+                alt="external link"
+                className={`${style.external_link_img}`}
+              />
+            </button>
+          </div>
         </div>
       </div>
     </div>

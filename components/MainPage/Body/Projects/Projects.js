@@ -8,8 +8,8 @@ const Projects = () => {
     {
       title: "JavaScript Quiz",
       description: `A simple way of testing your JavaScript knowledge. This
-                      app aims to better your skills and give you a challenge.
-                      Hosted by Netlify.`,
+                      app aims to better your skills and give you a challenge. Created using Next.js and 
+                      hosted by Netlify.`,
       img_path: "quiz-tall.png",
       img_name: "JavaScript Quiz Project",
       path_link: "https://js-quiz-ah.netlify.app/",
@@ -19,6 +19,8 @@ const Projects = () => {
       text_align: "right",
       list_float: "right",
       project_list: ["Next.js", "Material UI", "SCSS", "Javascript"],
+      external_link_path_1: "icons8-github-64.png",
+      external_link_path_2: "link.png",
       key: 1,
     },
     {
@@ -38,6 +40,8 @@ const Projects = () => {
         "Open Weather API",
         "Typescript",
       ],
+      external_link_path_1: "link.png",
+      external_link_path_2: "icons8-github-64.png",
       key: 2,
     },
   ];
@@ -48,7 +52,7 @@ const Projects = () => {
     return (
       <section className={style.projects_container}>
         <div className={`${style.big_word} ${style.filter}`}>
-          <img src="/projects.svg" alt="big word"/>
+          <img src="/projects.svg" alt="big word" />
         </div>
         <div className={style.project_items}>
           <div className={style.project_header} id="projects">
@@ -72,6 +76,8 @@ const Projects = () => {
                   text_align={item.text_align}
                   list_float={item.list_float}
                   project_list={item.project_list}
+                  external_link_path_1={item.external_link_path_1}
+                  external_link_path_2={item.external_link_path_2}
                   key={idx}
                 />
               </li>
