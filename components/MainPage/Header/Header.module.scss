@@ -1,6 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 
-
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 
 .container {
   font-family: "Oswald", sans-serif;
@@ -9,6 +16,12 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+
+  -webkit-animation: 1s ease-out 0s 1 slideInLeft; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: 1s ease-out 0s 1 slideInLeft; /* Firefox < 16 */
+  -ms-animation: 1s ease-out 0s 1 slideInLeft; /* Internet Explorer */
+  -o-animation: 1s ease-out 0s 1 slideInLeft; /* Opera < 12.1 */
+  animation: 1s ease-out 0s 1 slideInLeft;
 }
 
 .logo {
