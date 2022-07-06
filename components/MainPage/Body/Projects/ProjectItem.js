@@ -18,9 +18,9 @@ const ProjectItem = ({ title, description, img_path, img_name, path_link, aria_l
       >
         <motion.div
           className={style.project_image_container}
-          initial={{ opacity: 0, x: -55, y: -55 }}
-          whileInView={{ opacity: 1, x: 0, y: 0 }}
-          transition={{ type: "spring", duration: 1, delay: 0.55 }}
+          initial={{ opacity: 0, y: -5 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ type: "spring", duration: 1, delay: 0.3 }}
           viewport={{ once: true }}
         >
           <div className={style.image_wrapper}>
@@ -53,9 +53,9 @@ const ProjectItem = ({ title, description, img_path, img_name, path_link, aria_l
                 ? style.text_align_right
                 : style.text_align_left
             }`}
-            initial={{ opacity: 0, x: -55, y: -55 }}
-            whileInView={{ opacity: 1, x: 0, y: 0 }}
-            transition={{ type: "spring", duration: 1, delay: 0.6 }}
+            initial={{ opacity: 0, y: -5 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ type: "spring", duration: 1, delay: 0.3 }}
             viewport={{ once: true }}
           >
             {/* PROJECT TITLE */}
@@ -63,9 +63,9 @@ const ProjectItem = ({ title, description, img_path, img_name, path_link, aria_l
           </motion.h3>
           <motion.div
             className={`${style.text_container}`}
-            initial={{ opacity: 0, x: -55, y: -55 }}
-            whileInView={{ opacity: 1, x: 0, y: 0 }}
-            transition={{ type: "spring", duration: 1, delay: 0.65 }}
+            initial={{ opacity: 0, y: -5 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ type: "spring", duration: 1, delay: 0.3 }}
             viewport={{ once: true }}
           >
             <p>
@@ -80,9 +80,9 @@ const ProjectItem = ({ title, description, img_path, img_name, path_link, aria_l
                 ? style.justify_content_end
                 : style.justify_content_start
             }`}
-            initial={{ opacity: 0, x: -55, y: -55 }}
-            whileInView={{ opacity: 1, x: 0, y: 0 }}
-            transition={{ type: "spring", duration: 1, delay: 0.7 }}
+            initial={{ opacity: 0, y: -5 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ type: "spring", duration: 1, delay: 0.3 }}
             viewport={{ once: true }}
           >
             {project_list &&
@@ -107,9 +107,9 @@ const ProjectItem = ({ title, description, img_path, img_name, path_link, aria_l
           >
             <motion.button
               className={` ${style.external_link}`}
-              initial={{ opacity: 0, x: -55, y: -55 }}
-              whileInView={{ opacity: 1, x: 0, y: 0 }}
-              transition={{ type: "spring", duration: 1, delay: .75 }}
+              initial={{ opacity: 0, y: -5 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ type: "spring", duration: 1, delay: 0.3 }}
               viewport={{ once: true }}
             >
               <img
@@ -120,9 +120,9 @@ const ProjectItem = ({ title, description, img_path, img_name, path_link, aria_l
             </motion.button>
             <motion.button
               className={`${style.external_link}`}
-              initial={{ opacity: 0, x: -55, y: -55 }}
-              whileInView={{ opacity: 1, x: 0, y: 0 }}
-              transition={{ type: "spring", duration: 1, delay: .75 }}
+              initial={{ opacity: 0, y: -5 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ type: "spring", duration: 1, delay: 0.3 }}
               viewport={{ once: true }}
             >
               <img

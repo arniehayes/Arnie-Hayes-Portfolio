@@ -1,29 +1,60 @@
 import style from "./Hero.module.scss";
 import Resume from "../Hero/Resume";
+import { motion } from "framer-motion";
 
 const AboutMeHero = () => {
   return (
     <section className={style.hero_container}>
-      <div className={`${style.big_word} ${style.filter}`}>
+      <motion.div
+        className={`${style.big_word} ${style.filter}`}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ type: "spring", duration: 1.5, delay: .3 }}
+        viewport={{ once: true }}
+      >
         <img src="hello.svg" alt="big word" />
-      </div>
+      </motion.div>
       <div className={style.info_container}>
         <div className={style.text_container}>
-          <div className={style.title}>
+          <motion.div
+            className={style.title}
+            initial={{ opacity: 0, y: -5 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ type: "spring", duration: 1, delay: 1.5}}
+            viewport={{ once: true }}
+          >
             <h1>Hi my name is</h1>
-          </div>
-          <div className={style.name}>
+          </motion.div>
+          <motion.div
+            className={style.name}
+            initial={{ opacity: 0, y: -5 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ type: "spring", duration: 1, delay: 1.75}}
+            viewport={{ once: true }}
+          >
             <h3>Arnie Hayes.</h3>
-          </div>
-          <div className={style.catchphrase}>
-            <h3>I build things for the web.</h3>
-          </div>
-          <div className={style.about}>
+          </motion.div>
+          <motion.div
+            className={style.catchphrase}
+            initial={{ opacity: 0, y: -5 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ type: "spring", duration: 1, delay: 2 }}
+            viewport={{ once: true }}
+          >
+            <h3>I build experiences for the web.</h3>
+          </motion.div>
+          <motion.div
+            className={style.about}
+            initial={{ opacity: 0, y: -5 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ type: "spring", duration: 1, delay: 2.5 }}
+            viewport={{ once: true }}
+          >
             <p>
               I'm a Front-end Web Developer specializing in building exceptional
               digital experiences.
             </p>
-          </div>
+          </motion.div>
         </div>
         {/* <div className={style.hero_img}>
           <img src="hero1.png" alt="hero" />

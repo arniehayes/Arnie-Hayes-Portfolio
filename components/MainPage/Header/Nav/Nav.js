@@ -46,8 +46,8 @@ const Nav = () => {
         <ul className={toggleMenu ? style.show : style.links} id="links">
           <Link href="/#projects" scroll={false}>
             <motion.a
-              initial={{ opacity: 0, x: -55, y: -55 }}
-              whileInView={{ opacity: 1, x: 0, y: 0 }}
+              initial={{ opacity: 0, y: -5 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ type: "spring", duration: 1, delay: 0 }}
               viewport={{ once: true }}
               onClick={() => closeNav()}
@@ -57,9 +57,9 @@ const Nav = () => {
           </Link>
           <Link href="/#resume" scroll={false}>
             <motion.a
-              initial={{ opacity: 0, x: -55, y: -55 }}
-              whileInView={{ opacity: 1, x: 0, y: 0 }}
-              transition={{ type: "spring", duration: 1, delay: .15 }}
+              initial={{ opacity: 0, y: -5 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ type: "spring", duration: 1, delay: 0.15 }}
               viewport={{ once: true }}
               onClick={() => closeNav()}
             >
@@ -68,9 +68,9 @@ const Nav = () => {
           </Link>
           <Link href="/#contact" scroll={false}>
             <motion.a
-              initial={{ opacity: 0, x: -55, y: -55 }}
-              whileInView={{ opacity: 1, x: 0, y: 0 }}
-              transition={{ type: "spring", duration: 1, delay: .30 }}
+              initial={{ opacity: 0, y: -5 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ type: "spring", duration: 1, delay: 0.25 }}
               viewport={{ once: true }}
               onClick={() => closeNav()}
             >

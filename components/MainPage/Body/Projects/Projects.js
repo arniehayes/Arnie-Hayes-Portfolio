@@ -52,15 +52,21 @@ const Projects = () => {
 
     return (
       <section className={style.projects_container}>
-        <div className={`${style.big_word} ${style.filter}`}>
+        <motion.div
+          className={`${style.big_word} ${style.filter}`}
+          initial={{ opacity: 0}}
+          whileInView={{ opacity: 1}}
+          transition={{ type: "spring", duration: 1, delay: .2 }}
+          viewport={{ once: true }}
+        >
           <img src="/projects.svg" alt="big word" />
-        </div>
+        </motion.div>
         <div className={style.project_items}>
           <motion.div
             className={style.project_header}
-            initial={{ opacity: 0, x: -55, y: -55 }}
-            whileInView={{ opacity: 1, x: 0, y: 0 }}
-            transition={{ type: "spring", duration: 1, delay: .5 }}
+            initial={{ opacity: 0, y: -5 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ type: "spring", duration: 1, delay: 0.3 }}
             viewport={{ once: true }}
             id="projects"
           >
