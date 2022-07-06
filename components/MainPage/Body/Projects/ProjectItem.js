@@ -1,6 +1,7 @@
 import style from "./Projects.module.scss";
 import React, { useState } from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const ProjectItem = ({ title, description, img_path, img_name, path_link, aria_label, flex_direction, negative_margin, text_align, list_float, project_list, external_link_path_1, external_link_path_2}) => {
 
@@ -15,7 +16,13 @@ const ProjectItem = ({ title, description, img_path, img_name, path_link, aria_l
             : style.flex_direction_row
         }`}
       >
-        <div className={style.project_image_container}>
+        <motion.div
+          className={style.project_image_container}
+          initial={{ opacity: 0, x: -55, y: -55 }}
+          whileInView={{ opacity: 1, x: 0, y: 0 }}
+          transition={{ type: "spring", duration: 1, delay: 0.55 }}
+          viewport={{ once: true }}
+        >
           <div className={style.image_wrapper}>
             <a
               href={path_link}
@@ -32,7 +39,7 @@ const ProjectItem = ({ title, description, img_path, img_name, path_link, aria_l
               />
             </a>
           </div>
-        </div>
+        </motion.div>
         <div
           className={`${style.project_description} ${
             negative_margin === "left"
@@ -40,29 +47,43 @@ const ProjectItem = ({ title, description, img_path, img_name, path_link, aria_l
               : style.negative_margin_right
           }`}
         >
-          <h3
+          <motion.h3
             className={`${style.project_name} ${
               text_align === "right"
                 ? style.text_align_right
                 : style.text_align_left
             }`}
+            initial={{ opacity: 0, x: -55, y: -55 }}
+            whileInView={{ opacity: 1, x: 0, y: 0 }}
+            transition={{ type: "spring", duration: 1, delay: 0.6 }}
+            viewport={{ once: true }}
           >
             {/* PROJECT TITLE */}
             {title}
-          </h3>
-          <div className={`${style.text_container}`}>
+          </motion.h3>
+          <motion.div
+            className={`${style.text_container}`}
+            initial={{ opacity: 0, x: -55, y: -55 }}
+            whileInView={{ opacity: 1, x: 0, y: 0 }}
+            transition={{ type: "spring", duration: 1, delay: 0.65 }}
+            viewport={{ once: true }}
+          >
             <p>
               {/* PROJECT DESCRIPTION */}
               {description}
             </p>
-          </div>
-          <ul
+          </motion.div>
+          <motion.ul
             className={`${style.project_tech_list} 
             ${
               list_float === "right"
                 ? style.justify_content_end
                 : style.justify_content_start
             }`}
+            initial={{ opacity: 0, x: -55, y: -55 }}
+            whileInView={{ opacity: 1, x: 0, y: 0 }}
+            transition={{ type: "spring", duration: 1, delay: 0.7 }}
+            viewport={{ once: true }}
           >
             {project_list &&
               project_list.map((item) => (
@@ -76,7 +97,7 @@ const ProjectItem = ({ title, description, img_path, img_name, path_link, aria_l
                   {item}
                 </li>
               ))}
-          </ul>
+          </motion.ul>
           <div
             className={`${style.external_link_container} ${
               text_align === "right"
@@ -84,20 +105,32 @@ const ProjectItem = ({ title, description, img_path, img_name, path_link, aria_l
                 : style.external_link_normal
             }`}
           >
-            <button className={` ${style.external_link}`}>
+            <motion.button
+              className={` ${style.external_link}`}
+              initial={{ opacity: 0, x: -55, y: -55 }}
+              whileInView={{ opacity: 1, x: 0, y: 0 }}
+              transition={{ type: "spring", duration: 1, delay: .75 }}
+              viewport={{ once: true }}
+            >
               <img
                 src={external_link_path_1}
                 alt="github external link"
                 className={`${style.external_link_img}`}
               />
-            </button>
-            <button className={`${style.external_link}`}>
+            </motion.button>
+            <motion.button
+              className={`${style.external_link}`}
+              initial={{ opacity: 0, x: -55, y: -55 }}
+              whileInView={{ opacity: 1, x: 0, y: 0 }}
+              transition={{ type: "spring", duration: 1, delay: .75 }}
+              viewport={{ once: true }}
+            >
               <img
                 src={external_link_path_2}
                 alt="external link"
                 className={`${style.external_link_img}`}
               />
-            </button>
+            </motion.button>
           </div>
         </div>
       </div>

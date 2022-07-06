@@ -1,21 +1,25 @@
 import Nav from "../../MainPage/Header/Nav/Nav";
 import style from "./Header.module.scss";
-import { motion, AnimatePresence, Variants } from "framer-motion";
+import { motion } from "framer-motion";
 
 const Header = () => {
 
 
   return (
-    <motion.div>
-      <header className={style.container}>
-        <div className={style.logo}>
-          <a href="/">
-            <img src="a.png" />
-          </a>
-        </div>
-        <Nav />
-      </header>
-    </motion.div>
+    <header className={style.container}>
+      <motion.div
+        initial={{ opacity: 0, x: -55, y: -55 }}
+        whileInView={{ opacity: 1, x: 0, y: 0 }}
+        transition={{ type: "spring", duration: 1 }}
+        viewport={{ once: true }}
+        className={style.logo}
+      >
+        <a href="/">
+          <img src="a.png" />
+        </a>
+      </motion.div>
+      <Nav />
+    </header>
   );
 };
 

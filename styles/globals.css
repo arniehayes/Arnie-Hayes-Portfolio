@@ -25,3 +25,25 @@ a {
   box-sizing: border-box;
   line-height: 150%;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #242222;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(78, 77, 77);
+  border-radius: 15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}

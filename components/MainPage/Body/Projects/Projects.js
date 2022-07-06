@@ -1,6 +1,7 @@
 import style from "./Projects.module.scss";
 import ProjectItem from "./ProjectItem";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const Projects = () => {
 
@@ -19,8 +20,8 @@ const Projects = () => {
       text_align: "right",
       list_float: "right",
       project_list: ["Next.js", "Material UI", "SCSS", "Javascript"],
-      external_link_path_1: "icons8-github-64.png",
-      external_link_path_2: "link.png",
+      external_link_path_1: "link.png",
+      external_link_path_2: "icons8-github-64.png",
       key: 1,
     },
     {
@@ -40,8 +41,8 @@ const Projects = () => {
         "Open Weather API",
         "Typescript",
       ],
-      external_link_path_1: "link.png",
-      external_link_path_2: "icons8-github-64.png",
+      external_link_path_1: "icons8-github-64.png",
+      external_link_path_2: "link.png",
       key: 2,
     },
   ];
@@ -55,10 +56,17 @@ const Projects = () => {
           <img src="/projects.svg" alt="big word" />
         </div>
         <div className={style.project_items}>
-          <div className={style.project_header} id="projects">
+          <motion.div
+            className={style.project_header}
+            initial={{ opacity: 0, x: -55, y: -55 }}
+            whileInView={{ opacity: 1, x: 0, y: 0 }}
+            transition={{ type: "spring", duration: 1, delay: .5 }}
+            viewport={{ once: true }}
+            id="projects"
+          >
             <h2>Notable Projects</h2>
             <span className={style.long_bar} />
-          </div>
+          </motion.div>
           <ul className={style.projects_list}>
             {/* When repeating code, its best to think of it dynamically. In this case map 
             is the dynamic option */}
