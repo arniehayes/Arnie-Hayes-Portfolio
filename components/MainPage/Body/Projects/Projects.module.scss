@@ -220,6 +220,7 @@ $accent-color: #58c5a4;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;   
+        position: relative;
     }
 
     .project_header {
@@ -347,9 +348,7 @@ $accent-color: #58c5a4;
     .big_word {
         font-family: 'Bebas Neue', cursive;
         position: absolute;
-        top: 115%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        top: 8%;
         z-index: 0;
         display: flex;
         justify-content: center;
