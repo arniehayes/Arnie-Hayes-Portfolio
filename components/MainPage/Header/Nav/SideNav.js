@@ -1,8 +1,15 @@
 import style from "./SideNav.module.scss";
+import { motion } from "framer-motion";
 
 const SideNav = () => {
     return (
-      <div className={style.side_nav_container}>
+      <motion.div
+        className={style.side_nav_container}
+        initial={{ opacity: 0, y: -5 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ type: "spring", duration: 1, delay: 1.6 }}
+        viewport={{ once: true }}
+      >
         <ul>
           <li>
             <a
@@ -35,7 +42,7 @@ const SideNav = () => {
             </a>
           </li>
         </ul>
-      </div>
+      </motion.div>
     );
 };
 

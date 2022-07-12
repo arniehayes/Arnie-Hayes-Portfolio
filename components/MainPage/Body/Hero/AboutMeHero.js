@@ -2,6 +2,7 @@ import style from "./Hero.module.scss";
 import Resume from "../Hero/Resume";
 import { motion } from "framer-motion";
 
+
 const AboutMeHero = () => {
   return (
     <section className={style.hero_container}>
@@ -20,7 +21,7 @@ const AboutMeHero = () => {
             className={style.title}
             initial={{ opacity: 0, y: -5 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ type: "spring", duration: 1, delay: 1.5}}
+            transition={{ type: "spring", duration: 1, delay: .7}}
             viewport={{ once: true }}
           >
             <h1>Hi my name is</h1>
@@ -29,7 +30,7 @@ const AboutMeHero = () => {
             className={style.name}
             initial={{ opacity: 0, y: -5 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ type: "spring", duration: 1, delay: 1.75}}
+            transition={{ type: "spring", duration: 1, delay: .9}}
             viewport={{ once: true }}
           >
             <h3>Arnie Hayes.</h3>
@@ -38,7 +39,7 @@ const AboutMeHero = () => {
             className={style.catchphrase}
             initial={{ opacity: 0, y: -5 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ type: "spring", duration: 1, delay: 2 }}
+            transition={{ type: "spring", duration: 1, delay: 1.1 }}
             viewport={{ once: true }}
           >
             <h3>I build experiences for the web.</h3>
@@ -47,7 +48,7 @@ const AboutMeHero = () => {
             className={style.about}
             initial={{ opacity: 0, y: -5 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ type: "spring", duration: 1, delay: 2.5 }}
+            transition={{ type: "spring", duration: 1, delay: 1.3}}
             viewport={{ once: true }}
           >
             <p>

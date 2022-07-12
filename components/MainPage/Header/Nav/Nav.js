@@ -15,7 +15,13 @@ const Nav = () => {
   } 
 
   return (
-    <div className={style.nav_container}>
+    <motion.div
+      className={style.nav_container}
+      initial={{ opacity: 0, y: -5 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ type: "spring", duration: 1, delay: 0 }}
+      viewport={{ once: true }}
+    >
       {/* NAV */}
       <nav
         className={`${style.navigation} ${toggleMenu && style.open}`}
@@ -79,7 +85,7 @@ const Nav = () => {
           </Link>
         </ul>
       </nav>
-    </div>
+    </motion.div>
   );
 };
 

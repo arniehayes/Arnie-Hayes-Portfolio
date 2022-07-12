@@ -1,8 +1,16 @@
 import style from "./GetInTouch.module.scss";
+import { motion } from "framer-motion";
 
 const GetInTouch = () => {
     return (
-      <div className={style.get_in_touch_container} id="contact">
+      <motion.div
+        className={style.get_in_touch_container}
+        id="contact"
+        initial={{ opacity: 0, y: -5 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ type: "spring", duration: 1, delay: 0.7 }}
+        viewport={{ once: true }}
+      >
         <h1>Get In Touch</h1>
         <p>
           Feel free to reach out if you have any questions or just want to chat!
@@ -16,7 +24,7 @@ const GetInTouch = () => {
         >
           <p>Say Hi!</p>
         </a>
-      </div>
+      </motion.div>
     );
 };
 
