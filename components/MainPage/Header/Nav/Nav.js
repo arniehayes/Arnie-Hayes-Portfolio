@@ -52,6 +52,7 @@ const Nav = () => {
         <ul className={toggleMenu ? style.show : style.links} id="links">
           <Link href="/#projects" scroll={false}>
             <motion.a
+              className={style.list_item}
               initial={{ opacity: 0, y: -5 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ type: "spring", duration: 1, delay: 0 }}
@@ -63,6 +64,7 @@ const Nav = () => {
           </Link>
           <Link href="/#resume" scroll={false}>
             <motion.a
+              className={style.list_item}
               initial={{ opacity: 0, y: -5 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ type: "spring", duration: 1, delay: 0.15 }}
@@ -74,6 +76,7 @@ const Nav = () => {
           </Link>
           <Link href="/#contact" scroll={false}>
             <motion.a
+              className={style.list_item}
               initial={{ opacity: 0, y: -5 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ type: "spring", duration: 1, delay: 0.25 }}

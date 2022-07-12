@@ -6,6 +6,7 @@ import SideNav from "../components/MainPage/Header/Nav/SideNav";
 import GetInTouch from "../components/MainPage/Footer/GetInTouch";
 import Header from "../components/MainPage/Header/Header";
 import Resume from "../components/MainPage/Body/Hero/Resume";
+import Skills from "../components/Skills/Skills";
 
 
 
@@ -16,6 +17,7 @@ const Home = () => {
     <>
       <Header />
       <AboutMeHero />
+      <Skills />
       <Projects />
       {/* <Slider /> */}
       <GetInTouch />
