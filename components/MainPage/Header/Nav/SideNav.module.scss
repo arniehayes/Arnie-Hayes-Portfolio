@@ -69,8 +69,13 @@ $accent-color: #58c5a4;
 
                     img {
                         width: 25px;
-                        height: 25px;
+                        height: auto;
                         vertical-align: middle;
+
+                        &:hover {
+                            width: 30px;
+                            height: auto;
+                        }
                     }
                 }
             }

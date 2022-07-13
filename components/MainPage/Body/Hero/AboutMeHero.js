@@ -1,5 +1,5 @@
 import style from "./Hero.module.scss";
-import Resume from "../Hero/Resume";
+import Resume from "./Resume";
 import { motion } from "framer-motion";
 
 
