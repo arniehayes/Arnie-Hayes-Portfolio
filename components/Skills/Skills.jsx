@@ -10,7 +10,7 @@ const Skills = () => {
     <section className={style.section_container}>
       <div className={style.skills_container}>
         <div className={style.title_container}>
-          <h2 className={style.title}>Current Technologies</h2>
+          <h2 className={style.title}>Current Tech</h2>
           <span className={style.long_bar} />
         </div>
         <div className={style.skill_list_container}>
