@@ -3,7 +3,8 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-const ProjectItem = ({ title, description, img_path, img_name, path_link, aria_label, flex_direction, negative_margin, text_align, list_float, project_list, external_link_path_1, external_link_path_2}) => {
+const ProjectItem = ({ title, description, img_path, img_name, path_link, aria_label, flex_direction, negative_margin,
+  text_align, list_float, project_list, external_link_path_1, external_link_path_2, external_link1, external_link2 }) => {
 
     const [position, setPosition] = useState("");
 
@@ -105,7 +106,11 @@ const ProjectItem = ({ title, description, img_path, img_name, path_link, aria_l
                 : style.external_link_normal
             }`}
           >
-            <motion.button
+            <motion.a
+              href={external_link1}
+              aria-label={aria_label}
+              target="_blank"
+              rel="noopener noreferrer"
               className={` ${style.external_link}`}
               initial={{ opacity: 0, y: -5 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -117,8 +122,12 @@ const ProjectItem = ({ title, description, img_path, img_name, path_link, aria_l
                 alt="github external link"
                 className={`${style.external_link_img}`}
               />
-            </motion.button>
-            <motion.button
+            </motion.a>
+            <motion.a
+              href={external_link2}
+              aria-label={aria_label}
+              target="_blank"
+              rel="noopener noreferrer"
               className={`${style.external_link}`}
               initial={{ opacity: 0, y: -5 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -130,7 +139,7 @@ const ProjectItem = ({ title, description, img_path, img_name, path_link, aria_l
                 alt="external link"
                 className={`${style.external_link_img}`}
               />
-            </motion.button>
+            </motion.a>
           </div>
         </div>
       </div>

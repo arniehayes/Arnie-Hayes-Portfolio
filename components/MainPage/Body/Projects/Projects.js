@@ -19,9 +19,17 @@ const Projects = () => {
       negative_margin: "left",
       text_align: "right",
       list_float: "right",
-      project_list: ["Next.js", "Material UI", "SCSS", "Javascript"],
+      project_list: [
+        "Next.js",
+        "React.js",
+        "Material UI",
+        "SCSS",
+        "Javascript",
+      ],
       external_link_path_1: "link.png",
       external_link_path_2: "icons8-github-64.png",
+      external_link1: "https://js-quiz-ah.netlify.app/",
+      external_link2: "https://github.com/arniehayes/Javascript-Quiz",
       key: 1,
     },
     {
@@ -30,6 +38,7 @@ const Projects = () => {
       img_path: "weather-tall.png",
       img_name: "Weather App",
       path_link: "https://weather-appv2.netlify.app/",
+      aria_label: "Weather App",
       flex_direction: "row-reverse",
       negative_margin: "right",
       text_align: "left",
@@ -43,7 +52,28 @@ const Projects = () => {
       ],
       external_link_path_1: "icons8-github-64.png",
       external_link_path_2: "link.png",
+      external_link1: "https://github.com/arniehayes/Weather-APP-V2",
+      external_link2: "https://weather-appv2.netlify.app/",
       key: 2,
+    },
+    {
+      title: "QuizLit",
+      description: `Trivia game! Have fun with your friends and test your knowledge of the world! Created with dynamic
+       pages using Static props and Static paths.`,
+      img_path: "quizlitSC.png",
+      img_name: "QuizLit Game",
+      path_link: "https://quizlit.netlify.app/",
+      aria_label: "QuizLit Game",
+      flex_direction: "row",
+      negative_margin: "left",
+      text_align: "right",
+      list_float: "right",
+      project_list: ["Next.js", "React.js", "SCSS", "Fetch", "Javascript"],
+      external_link_path_1: "link.png",
+      external_link_path_2: "icons8-github-64.png",
+      external_link1: "https://quizlit.netlify.app/",
+      external_link2: "https://github.com/arniehayes/QuizLit",
+      key: 3,
     },
   ];
 
@@ -54,9 +84,9 @@ const Projects = () => {
       <section className={style.projects_container}>
         <motion.div
           className={`${style.big_word} ${style.filter}`}
-          initial={{ opacity: 0}}
-          whileInView={{ opacity: 1}}
-          transition={{ type: "spring", duration: 1, delay: .2 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ type: "spring", duration: 1, delay: 0.2 }}
           viewport={{ once: true }}
         >
           <img src="/projects.svg" alt="big word" />
@@ -92,6 +122,8 @@ const Projects = () => {
                   project_list={item.project_list}
                   external_link_path_1={item.external_link_path_1}
                   external_link_path_2={item.external_link_path_2}
+                  external_link1={item.external_link1}
+                  external_link2={item.external_link2}
                   key={idx}
                 />
               </li>
