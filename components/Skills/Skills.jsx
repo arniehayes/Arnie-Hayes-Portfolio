@@ -1,6 +1,6 @@
 import React from 'react'
 import style from "./Skills.module.scss";
-import ArrowRightRoundedIcon from "@mui/icons-material/ArrowRightRounded";
+import CircleRoundedIcon from '@mui/icons-material/CircleRounded';
 import { motion } from "framer-motion";
 
 const Skills = () => {
@@ -32,7 +32,7 @@ const Skills = () => {
                 viewport={{ once: true }}
               >
                 <span className={style.span}>
-                  <ArrowRightRoundedIcon />
+                  {/* <CircleRoundedIcon /> */}
                   {item}
                 </span>
               </motion.li>
@@ -49,7 +49,7 @@ const Skills = () => {
                 viewport={{ once: true }}
               >
                 <span className={style.span}>
-                  <ArrowRightRoundedIcon />
+                  {/* <CircleRoundedIcon /> */}
                   {item}
                 </span>
               </motion.li>
