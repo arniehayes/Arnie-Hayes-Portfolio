@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const Skills = () => {
 
-  const skill_list = ["Javascript", "Typescript", "React.js", "Next.js", "Sass", "HTML", "CSS", "Node.js"]
+  const skill_list = ["Javascript", "Typescript", "React.js", "Next.js", "Sass", "HTML", "CSS", "Node.js", "Axios", "Context API", "CSS Modules", "REST API"]
 
   return (
     <section className={style.section_container}>
@@ -22,7 +22,7 @@ const Skills = () => {
         </motion.div>
         <div className={style.skill_list_container}>
           <ul className={style.skill_list}>
-            {skill_list.slice(0, 4).map((item, idx) => (
+            {skill_list.slice(0, 6).map((item, idx) => (
               <motion.li
                 className={style.skill_item}
                 id={idx}
@@ -39,7 +39,7 @@ const Skills = () => {
             ))}
           </ul>
           <ul className={style.skill_list}>
-            {skill_list.slice(4).map((item, idx) => (
+            {skill_list.slice(6).map((item, idx) => (
               <motion.li
                 className={style.skill_item}
                 id={idx}
