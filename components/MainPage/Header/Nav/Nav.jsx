@@ -23,7 +23,7 @@ const Nav = () => {
       viewport={{ once: true }}
     >
       {/* NAV */}
-      <nav
+      <div
         className={`${style.navigation} ${toggleMenu && style.open}`}
         id="nav"
       >
@@ -36,6 +36,7 @@ const Nav = () => {
           {toggleMenu ? (
             <img
               src="cross.png"
+              alt="Clicking this will close the nav menu"
               aria-label="close icon"
               className={`${style.icon_margins} ${
                 toggleMenu ? style.icon : style.hide_icon
@@ -44,6 +45,7 @@ const Nav = () => {
           ) : (
             <img
               src="list.png"
+              alt="Clicking this will open the nav menu"
               aria-label="menu icon"
               className={toggleMenu ? style.hide_icon : style.icon}
             />
@@ -87,7 +89,7 @@ const Nav = () => {
             </motion.a>
           </Link>
         </ul>
-      </nav>
+      </div>
     </motion.div>
   );
 };

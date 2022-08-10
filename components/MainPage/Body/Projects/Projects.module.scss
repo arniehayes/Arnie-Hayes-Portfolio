@@ -162,13 +162,7 @@ $accent-color: #58c5a4;
 
 .big_word {
     position: absolute;
-    top: 160%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 0;
     display: none;
-    justify-content: center;
-    align-items: center;
     width: 100%;
 
     img {
@@ -348,7 +342,7 @@ $accent-color: #58c5a4;
     .big_word {
         font-family: 'Bebas Neue', cursive;
         position: absolute;
-        top: 8%;
+        top: 1%;
         z-index: 0;
         display: flex;
         justify-content: center;

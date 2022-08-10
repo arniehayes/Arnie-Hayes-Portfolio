@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const GetInTouch = () => {
     return (
-      <motion.div
+      <motion.footer
         className={style.get_in_touch_container}
         id="contact"
         initial={{ opacity: 0, y: -5 }}
@@ -24,7 +24,7 @@ const GetInTouch = () => {
         >
           <p>Say Hi!</p>
         </a>
-      </motion.div>
+      </motion.footer>
     );
 };
 

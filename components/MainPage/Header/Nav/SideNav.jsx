@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const SideNav = () => {
     return (
-      <motion.div
+      <motion.aside
         className={style.side_nav_container}
         initial={{ opacity: 0, y: -5 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -18,7 +18,7 @@ const SideNav = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="icons8-github-64.png" />
+              <img src="icons8-github-64.png" alt="Clicking this will take you to github"/>
             </a>
           </li>
           <li>
@@ -28,7 +28,7 @@ const SideNav = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="icons8-linkedin-120.png" />
+              <img src="icons8-linkedin-120.png" alt="Clicking this will take you to linkedin"/>
             </a>
           </li>
           <li>
@@ -38,11 +38,11 @@ const SideNav = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="cv.png" />
+              <img src="cv.png" alt="Clicking this will take you to my resume"/>
             </a>
           </li>
         </ul>
-      </motion.div>
+      </motion.aside>
     );
 };
 

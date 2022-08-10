@@ -22,11 +22,11 @@ $accent-color: #58c5a4;
 
 .title {
     font-family: 'Quicksand', sans-serif;
-    font-size: 13px;
     
-    h1 {
+    p {
         margin: 0;
         color: $accent-color;
+        font-size: 25px;
     }
 }
 
@@ -34,16 +34,14 @@ $accent-color: #58c5a4;
     font-family: 'Bebas Neue', cursive;
     font-size: 55px;
     color: rgb(212, 212, 212);
-
-    h3 {
-        margin: 0;
-    }
+    margin: 0;
+    padding: 0;
 }
 
 .catchphrase {
     font-size: 28px;
 
-    h3 {
+    p {
         margin: 0;
         color: rgba(207, 204, 204, 0.404);
     }
@@ -96,16 +94,8 @@ $accent-color: #58c5a4;
 // }
 
 .big_word {
-    position: absolute;
-    top: 160%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 0;
     display: none;
-    justify-content: center;
-    align-items: center;
     width: 100%;
-
     img {
         max-width: 100%;
         height: auto;
@@ -127,7 +117,7 @@ $accent-color: #58c5a4;
 
     .big_word {
         position: absolute;
-        top: 39%;
+        top: 35%;
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 0;
@@ -159,12 +149,12 @@ $accent-color: #58c5a4;
 
     .title {
         font-family: 'Quicksand', sans-serif;
-        font-size: 30px;
         width: 100%;
         
-        h1 {
+        p {
             margin: 0;
             color: $accent-color;
+            font-size: 30px;
         }
     }
 
@@ -175,18 +165,13 @@ $accent-color: #58c5a4;
         width: 100%;
         margin: 0;
         padding: 0;
-
-        h3 {
-            padding: 0;
-            margin: 0;
-        }
     }
 
     .catchphrase {
         font-size: 35px;
         width: 100%;
 
-        h3 {
+        p {
             margin: 0;
             color: rgba(207, 204, 204, 0.404);
         }

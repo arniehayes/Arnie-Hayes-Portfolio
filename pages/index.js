@@ -22,7 +22,7 @@ const Home = () => {
       {/* <Slider /> */}
       <GetInTouch />
       <SideNav />
-    </>
+      </>
   );
 };
 

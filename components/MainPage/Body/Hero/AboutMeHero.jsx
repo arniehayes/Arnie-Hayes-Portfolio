@@ -5,7 +5,8 @@ import { motion } from "framer-motion";
 
 const AboutMeHero = () => {
   return (
-    <section className={style.hero_container}>
+    // Background Image
+    <header className={style.hero_container}>
       <motion.div
         className={`${style.big_word} ${style.filter}`}
         initial={{ opacity: 0 }}
@@ -15,6 +16,7 @@ const AboutMeHero = () => {
       >
         <img src="hello.svg" alt="big word" />
       </motion.div>
+      {/* HERO */}
       <div className={style.info_container}>
         <div className={style.text_container}>
           <motion.div
@@ -24,16 +26,8 @@ const AboutMeHero = () => {
             transition={{ type: "spring", duration: 1, delay: .7}}
             viewport={{ once: true }}
           >
-            <h1>Hi my name is</h1>
-          </motion.div>
-          <motion.div
-            className={style.name}
-            initial={{ opacity: 0, y: -5 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ type: "spring", duration: 1, delay: .9}}
-            viewport={{ once: true }}
-          >
-            <h3>Arnie Hayes.</h3>
+            <p>Hi my name is</p>
+            <h1 className={style.name}> Arnie Hayes</h1>
           </motion.div>
           <motion.div
             className={style.catchphrase}
@@ -42,7 +36,7 @@ const AboutMeHero = () => {
             transition={{ type: "spring", duration: 1, delay: 1.1 }}
             viewport={{ once: true }}
           >
-            <h3>I build experiences for the web.</h3>
+            <p>I build experiences for the web.</p>
           </motion.div>
           <motion.div
             className={style.about}
@@ -62,7 +56,7 @@ const AboutMeHero = () => {
         </div> */}
         <Resume />
       </div>
-    </section>
+    </header>
   );
 };
 

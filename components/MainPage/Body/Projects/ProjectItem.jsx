@@ -17,7 +17,7 @@ const ProjectItem = ({ title, description, img_path, img_name, path_link, aria_l
             : style.flex_direction_row
         }`}
       >
-        <motion.div
+        <motion.section
           className={style.project_image_container}
           initial={{ opacity: 0, y: -5 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -40,8 +40,8 @@ const ProjectItem = ({ title, description, img_path, img_name, path_link, aria_l
               />
             </a>
           </div>
-        </motion.div>
-        <div
+        </motion.section>
+        <section
           className={`${style.project_description} ${
             negative_margin === "left"
               ? style.negative_margin_left
@@ -99,7 +99,7 @@ const ProjectItem = ({ title, description, img_path, img_name, path_link, aria_l
                 </li>
               ))}
           </motion.ul>
-          <div
+          <footer
             className={`${style.external_link_container} ${
               text_align === "right"
                 ? style.external_link_reverse
@@ -120,6 +120,7 @@ const ProjectItem = ({ title, description, img_path, img_name, path_link, aria_l
               <img
                 src={external_link_path_1}
                 alt="github external link"
+                aria-label="github external link"
                 className={`${style.external_link_img}`}
               />
             </motion.a>
@@ -136,12 +137,13 @@ const ProjectItem = ({ title, description, img_path, img_name, path_link, aria_l
             >
               <img
                 src={external_link_path_2}
-                alt="external link"
+                alt="live site external link"
+                aria-label="live site external link"
                 className={`${style.external_link_img}`}
               />
             </motion.a>
-          </div>
-        </div>
+          </footer>
+        </section>
       </div>
     </div>
   );

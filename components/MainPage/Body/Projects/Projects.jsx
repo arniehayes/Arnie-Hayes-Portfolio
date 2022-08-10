@@ -92,7 +92,7 @@ const Projects = () => {
           <img src="/projects.svg" alt="big word" />
         </motion.div>
         <div className={style.project_items}>
-          <motion.div
+          <motion.header
             className={style.project_header}
             initial={{ opacity: 0, y: -5 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -102,7 +102,7 @@ const Projects = () => {
           >
             <h2>Notable Projects</h2>
             <span className={style.long_bar} />
-          </motion.div>
+          </motion.header>
           <ul className={style.projects_list}>
             {/* When repeating code, its best to think of it dynamically. In this case map 
             is the dynamic option */}

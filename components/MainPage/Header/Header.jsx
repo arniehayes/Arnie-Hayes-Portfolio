@@ -1,4 +1,4 @@
-import Nav from "../../MainPage/Header/Nav/Nav";
+import Nav from "./Nav/Nav";
 import style from "./Header.module.scss";
 import { motion } from "framer-motion";
 
@@ -6,7 +6,7 @@ const Header = () => {
 
 
   return (
-    <header className={style.container}>
+    <nav className={style.container}>
       <motion.div
         initial={{ opacity: 0, y: -5 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -15,11 +15,11 @@ const Header = () => {
         className={style.logo}
       >
         <a href="/">
-          <img src="a.png" />
+          <img src="a.png" alt="Clicking this will take you to the home page" />
         </a>
       </motion.div>
       <Nav />
-    </header>
+    </nav>
   );
 };
 
