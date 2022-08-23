@@ -19,7 +19,8 @@ function MyApp({ Component, pageProps }) {
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         />
-        <link href="" rel="stylesheet" />
+        {/* FAVICON */}
+        <link rel="shortcut icon" href="/a.png" />
       </Head>
       <Component {...pageProps} />
     </>
