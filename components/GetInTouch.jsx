@@ -1,4 +1,4 @@
-import style from "./GetInTouch.module.scss";
+import style from "../styles/GetInTouch.module.scss";
 import { motion } from "framer-motion";
 
 const GetInTouch = () => {

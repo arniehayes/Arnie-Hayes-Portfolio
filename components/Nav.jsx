@@ -1,4 +1,4 @@
-import style from "./Nav.module.scss";
+import style from "../styles/Nav.module.scss";
 import Link from "next/link";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";

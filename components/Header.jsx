@@ -1,5 +1,5 @@
-import Nav from "./Nav/Nav";
-import style from "./Header.module.scss";
+import Nav from "./Nav";
+import style from "../styles/Header.module.scss";
 import { motion } from "framer-motion";
 
 const Header = () => {

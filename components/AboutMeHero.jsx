@@ -1,4 +1,4 @@
-import style from "./Hero.module.scss";
+import style from "../styles/Hero.module.scss";
 import Resume from "./Resume";
 import { motion } from "framer-motion";
 

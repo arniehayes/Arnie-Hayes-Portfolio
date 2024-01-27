@@ -1,12 +1,11 @@
 
-import AboutMeHero from "../components/MainPage/Body/Hero/AboutMeHero";
-import Projects from "../components/MainPage/Body/Projects/Projects";
-import Slider from "../components/MainPage/Body/Slider/Slider";
-import SideNav from "../components/MainPage/Header/Nav/SideNav";
-import GetInTouch from "../components/MainPage/Footer/GetInTouch";
-import Header from "../components/MainPage/Header/Header";
-import Resume from "../components/MainPage/Body/Hero/Resume";
-import Skills from "../components/Skills/Skills";
+import AboutMeHero from "../components/AboutMeHero";
+import Projects from "../components/Projects";
+import SideNav from "../components/SideNav";
+import GetInTouch from "../components/GetInTouch";
+import Header from "../components/Header";
+import Skills from "../components/Skills";
+import WorkHistory from "../components/WorkHistory";
 
 
 
@@ -17,6 +16,7 @@ const Home = () => {
     <>
       <Header />
       <AboutMeHero />
+      <WorkHistory />
       <Skills />
       <Projects />
       {/* <Slider /> */}

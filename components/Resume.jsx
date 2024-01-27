@@ -1,4 +1,4 @@
-import style from "./Resume.module.scss";
+import style from "../styles/Resume.module.scss";
 import { motion } from "framer-motion";
 
 const Resume = () => {

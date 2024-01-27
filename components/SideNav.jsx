@@ -1,4 +1,4 @@
-import style from "./SideNav.module.scss";
+import style from "../styles/SideNav.module.scss";
 import { motion } from "framer-motion";
 
 const SideNav = () => {

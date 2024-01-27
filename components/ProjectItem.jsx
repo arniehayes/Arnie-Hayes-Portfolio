@@ -1,4 +1,4 @@
-import style from "./Projects.module.scss";
+import style from "../styles/Projects.module.scss";
 import React, { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";

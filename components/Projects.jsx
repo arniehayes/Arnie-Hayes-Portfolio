@@ -1,7 +1,8 @@
-import style from "./Projects.module.scss";
+import style from "../styles/Projects.module.scss";
 import ProjectItem from "./ProjectItem";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import SectionTitle from "./SectionTitle";
 
 const Projects = () => {
 
@@ -92,17 +93,7 @@ const Projects = () => {
           <img src="/projects.svg" alt="big word" />
         </motion.div>
         <div className={style.project_items}>
-          <motion.header
-            className={style.project_header}
-            initial={{ opacity: 0, y: -5 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ type: "spring", duration: 1, delay: 0.3 }}
-            viewport={{ once: true }}
-            id="projects"
-          >
-            <h2>Notable Projects</h2>
-            <span className={style.long_bar} />
-          </motion.header>
+        <SectionTitle title={"Notable Projects"}/>
           <ul className={style.projects_list}>
             {/* When repeating code, its best to think of it dynamically. In this case map 
             is the dynamic option */}
