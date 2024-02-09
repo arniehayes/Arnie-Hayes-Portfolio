@@ -33,7 +33,7 @@ const SideNav = () => {
           </li>
           <li>
             <a
-              href="https://drive.google.com/file/d/1SDfobPOnSNI5nIi9QcLrfRVrMUhekc0P/view?usp=sharing"
+              href="https://drive.google.com/file/d/13AQ7vJOMFbpn6DuyLA8kV7XRmNgPK2OR/view"
               aria-label="Resume"
               target="_blank"
               rel="noopener noreferrer"
