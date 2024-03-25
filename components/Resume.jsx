@@ -6,7 +6,7 @@ const Resume = () => {
       <section className={style.resume_section}>
         <div className={style.resume_button_container} id="resume">
           <motion.a
-            href="https://drive.google.com/file/d/1BVA8iSaTW-Xd4wfBhgzs5_GOx0XhTbJB/view"
+            href="https://drive.google.com/file/d/1bDFOsDdtjJjPjwzSlarPVErlnIuP2M8C/view"
             aria-label="Resume Download"
             target="_blank"
             rel="noopener noreferrer"

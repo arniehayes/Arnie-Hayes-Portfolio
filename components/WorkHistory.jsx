@@ -7,25 +7,28 @@ const WorkHistory = () => {
   const workHistoryObj = [
     {
       company: "SelectQuote",
-      title: "Web Developer II",
+      title: "Software Engineer II",
       date: " Sep 2021 - Current",
       details: [
-        "Converted 7 Wordpress applications into efficient React applications in an agile environment.",
-        "Streamlined and maintained multiple React & Wordpress codebases for heavily trafficked web applications simultaneously.",
-        "Utilized Next.js to implement performance enhancements that resulted in a 25% page load speed increase.",
-        "Implemented front end and back end features across 20 Wordpress sites and 7 React applications.",
+        "Orchestrated the migration of 7 Wordpress-based applications into high-performance React and Typescript based solutions within the dynamic framework of an agile development environment.",
+        "Spearheaded the optimization and ongoing management of diverse React and Wordpress codebases catering to high-volume web traffic, ensuring seamless functionality across multiple applications simultaneously.",
+        "Leveraged the power of Next.js to architect and deploy dynamic page routing mechanisms, culminating in a notable 25% enhancement in page load speed, thereby augmenting user experience and engagement.",
+        "Proficiently executed the implementation of both front-end and back-end functionalities across a comprehensive portfolio consisting of 20 Wordpress sites and 7 React applications, showcasing adeptness in full-stack development practices.",
+        "Conducted A/B tests on features and layouts, analyzing user engagement metrics to inform data-driven decisions and optimize conversion rates, resulting in measurable improvements in user experience and business outcomes.",
+        "Collaborated with cross-functional teams, including developers, QA engineers, and product managers, fostering effective communication and ensuring alignment to drive efficiency and successful outcomes."
       ],
     },
     {
-      company: "W.W. Grainger",
-      title: "Sales Associate",
-      date: "Dec 2020 - Sep 2021",
+      company: "MKM Associates",
+      title: "Freelance Software Engineer",
+      date: "Apr 2021 - Sep 2023",
       details: [
-        "Provided solutions to maximize sales opportunities by 35%.",
-        "Created an increase in customer loyalty within 6 months.",
-        "Achieved a 30% increase in customer expectations.",
-        "Used Salesforce daily to create new orders and locate customer accounts.",
-        "Trained 2 new team members on various systems and programs.",
+        "Collaborated with cross-functional teams to translate design mockups into interactive prototypes, ensuring pixel-perfect implementation and adherence to UX/UI best practices.",
+        "Developed custom reusable UI components and libraries to standardize frontend development across multiple projects, increasing development efficiency by 30%.",
+        "Mentored junior developers on frontend best practices, coding standards, and emerging technologies, fostering a collaborative and knowledge-sharing environment within the team.",
+        "Actively participated in Agile development sprints, contributing to sprint planning, daily stand-ups, and retrospectives to deliver high-quality features on time and within scope.",
+        "Optimized frontend performance by conducting comprehensive code reviews, refactoring legacy code, and integrating performance monitoring tools, resulting in a 50% decrease in page load time.",
+        "Led the development of a responsive web application from conception to deployment, resulting in a 30% increase in user engagement and a 25% decrease in bounce rate."
       ],
     },
   ];
