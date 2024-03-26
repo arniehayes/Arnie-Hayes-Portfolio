@@ -93,7 +93,7 @@ const Projects = () => {
           <img src="/projects.svg" alt="big word" />
         </motion.div>
         <div className={style.project_items}>
-        <SectionTitle title={"Notable Projects"}/>
+        <SectionTitle title={"Notable Projects"} id="projects"/>
           <ul className={style.projects_list}>
             {/* When repeating code, its best to think of it dynamically. In this case map 
             is the dynamic option */}
