@@ -74,7 +74,7 @@ const WorkHistory = () => {
 
   return (
     <section className={style.outer_container}>
-      <div className={style.inner_container}>
+      <div className={style.inner_container} id="experience">
         <SectionTitle title={"Experience"} />
         <div className={style.experienceContainer}>
           <div className={style.tabList}>

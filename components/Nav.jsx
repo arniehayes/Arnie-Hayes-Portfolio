@@ -64,6 +64,18 @@ const Nav = () => {
               Projects
             </motion.a>
           </Link>
+          <Link href="/#experience" scroll={false}>
+            <motion.a
+              className={style.list_item}
+              initial={{ opacity: 0, y: -5 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ type: "spring", duration: 1, delay: 0 }}
+              viewport={{ once: true }}
+              onClick={() => closeNav()}
+            >
+              Experience
+            </motion.a>
+          </Link>
           <Link href="/#resume" scroll={false}>
             <motion.a
               className={style.list_item}

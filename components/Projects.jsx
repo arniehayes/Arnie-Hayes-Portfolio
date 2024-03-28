@@ -89,11 +89,10 @@ const Projects = () => {
           whileInView={{ opacity: 1 }}
           transition={{ type: "spring", duration: 1, delay: 0.2 }}
           viewport={{ once: true }}
-          id="projects"
         >
           <img src="/projects.svg" alt="big word" />
         </motion.div>
-        <div className={style.project_items}>
+        <div className={style.project_items} id="projects">
         <SectionTitle title={"Notable Projects"} />
           <ul className={style.projects_list}>
             {/* When repeating code, its best to think of it dynamically. In this case map 
